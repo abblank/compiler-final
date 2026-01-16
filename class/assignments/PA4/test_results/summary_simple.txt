@@ -1,0 +1,5 @@
+测试文件: simple.cl
+测试结果: 通过
+我的语义分析器退出码: 0
+官方语义分析器退出码: 0
+输出文件: mysemant_simple.out, auth_semant_simple.out

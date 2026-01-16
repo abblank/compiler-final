@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# --- 配置 ---
+# set -e: 如果任何命令失败（返回非零退出码），则立即退出脚本。
+# 这可以防止后续阶段在错误的输入上运行。
+set -e
+
+# --- 检查参数 ---
+if [ -z "$1" ]; then
+    echo "用法: $0 <输入文件.cl>" >&2
+    exit 1
+fi
+
+# --- 创建临时文件 ---
+# mktemp会创建一个安全的、唯一的临时文件
+# trap命令确保脚本退出时（无论正常结束还是被中断），临时文件都会被删除
+TMP_FILE=$(mktemp)
+trap 'rm -f "$TMP_FILE"' EXIT
+
+# --- 阶段 1: 词法分析 (Lexer) ---
+echo "=== 词法分析输出 ==="
+# 运行lexer，将它的标准输出重定向到临时文件
+./lexer "$@" > "$TMP_FILE"
+# 使用cat将临时文件的内容打印到屏幕上，这样我们就看到了lexer的输出
+cat "$TMP_FILE"
+
+
+# --- 阶段 2: 语法分析 (Parser) ---
+echo -e "\n\n=== 语法分析输出 ==="
+# 运行parser，将它的标准输入重定向为上一个阶段的临时文件内容
+# 然后用它的输出覆盖掉临时文件，为下一阶段做准备
+./parser "$@" < "$TMP_FILE" > "$TMP_FILE.tmp" && mv "$TMP_FILE.tmp" "$TMP_FILE"
+# 再次打印临时文件的内容，现在是parser的输出了
+cat "$TMP_FILE"
+
+
+# --- 阶段 3: 语义分析 (Semant) ---
+echo -e "\n\n=== 语义分析输出 ==="
+# 重复上述模式
+./semant "$@" < "$TMP_FILE" > "$TMP_FILE.tmp" && mv "$TMP_FILE.tmp" "$TMP_FILE"
+cat "$TMP_FILE"
+
+
+# --- 阶段 4: 代码生成 (Cgen) ---
+echo -e "\n\n=== 代码生成输出 ==="
+# 这是最后一个阶段，所以它的输出可以直接打印到终端，无需再存入临时文件
+./cgen "$@" < "$TMP_FILE"
+spim ${1/.cl/.s}
+
+
+# --- 结束 ---
+echo -e "\n\n=== 编译流程结束 ==="

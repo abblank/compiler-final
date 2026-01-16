@@ -1,0 +1,17 @@
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    "simple.cl"
+    (
+    #2
+    _method
+      main
+      Object
+      #2
+      _object
+        self
+      : SELF_TYPE
+    )

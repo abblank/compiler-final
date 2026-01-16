@@ -1,0 +1,9427 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    "main.cl"
+    (
+    #2
+    _attr
+      list1
+      List
+      #2
+      _dispatch
+        #2
+        _new
+          List
+        : List
+        list_init
+        (
+        #2
+        _string
+          "list1"
+        : String
+        )
+      : List
+    #3
+    _attr
+      list2
+      List
+      #3
+      _dispatch
+        #3
+        _new
+          List
+        : List
+        list_init
+        (
+        #3
+        _string
+          "list2"
+        : String
+        )
+      : List
+    #4
+    _attr
+      list3
+      List
+      #4
+      _dispatch
+        #4
+        _new
+          List
+        : List
+        list_init
+        (
+        #4
+        _string
+          "list3"
+        : String
+        )
+      : List
+    #5
+    _attr
+      stack1
+      Stack
+      #5
+      _dispatch
+        #5
+        _new
+          Stack
+        : Stack
+        stack_init
+        (
+        #5
+        _string
+          "stack1"
+        : String
+        )
+      : Stack
+    #6
+    _attr
+      queue1
+      Queue
+      #6
+      _dispatch
+        #6
+        _new
+          Queue
+        : Queue
+        queue_init
+        (
+        #6
+        _string
+          "queue1"
+        : String
+        )
+      : Queue
+    #7
+    _attr
+      bst1
+      BST
+      #7
+      _dispatch
+        #7
+        _new
+          BST
+        : BST
+        bst_init
+        (
+        #7
+        _string
+          "bst1"
+        : String
+        )
+      : BST
+    #8
+    _attr
+      ht1
+      HashTable
+      #8
+      _dispatch
+        #8
+        _new
+          HashTable
+        : HashTable
+        ht_init
+        (
+        #8
+        _string
+          "ht1"
+        : String
+        #8
+        _int
+          3
+        : Int
+        )
+      : HashTable
+    #10
+    _attr
+      dbg
+      Mylib
+      #10
+      _new
+        Mylib
+      : Mylib
+    #11
+    _method
+      main
+      Object
+      #12
+      _block
+        #13
+        _dispatch
+          #13
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #13
+          _string
+            "\n====================================================\n"
+          : String
+          )
+        : SELF_TYPE
+        #15
+        _dispatch
+          #15
+          _object
+            list1
+          : List
+          insert
+          (
+          #15
+          _int
+            123
+          : Int
+          )
+        : Bool
+        #16
+        _dispatch
+          #16
+          _object
+            list1
+          : List
+          insert
+          (
+          #16
+          _string
+            "hello"
+          : String
+          )
+        : Bool
+        #17
+        _dispatch
+          #17
+          _object
+            list1
+          : List
+          insert
+          (
+          #17
+          _int
+            456
+          : Int
+          )
+        : Bool
+        #18
+        _dispatch
+          #18
+          _object
+            list1
+          : List
+          insert
+          (
+          #18
+          _bool
+            1
+          : Bool
+          )
+        : Bool
+        #20
+        _dispatch
+          #20
+          _dispatch
+            #20
+            _dispatch
+              #20
+              _dispatch
+                #20
+                _object
+                  list2
+                : List
+                linkBehind
+                (
+                #20
+                _bool
+                  1
+                : Bool
+                )
+              : Node
+              linkBehind
+              (
+              #20
+              _int
+                456
+              : Int
+              )
+            : Node
+            linkBehind
+            (
+            #20
+            _string
+              "hello"
+            : String
+            )
+          : Node
+          linkBehind
+          (
+          #20
+          _int
+            123
+          : Int
+          )
+        : Node
+        #22
+        _dispatch
+          #22
+          _object
+            list3
+          : List
+          linkBehindN
+          (
+          #22
+          _dispatch
+            #22
+            _dispatch
+              #22
+              _dispatch
+                #22
+                _dispatch
+                  #22
+                  _new
+                    Node
+                  : Node
+                  node_init
+                  (
+                  #22
+                  _int
+                    123
+                  : Int
+                  )
+                : Node
+                linkBefore
+                (
+                #22
+                _string
+                  "hello"
+                : String
+                )
+              : Node
+              linkBefore
+              (
+              #22
+              _int
+                456
+              : Int
+              )
+            : Node
+            linkBefore
+            (
+            #22
+            _bool
+              1
+            : Bool
+            )
+          : Node
+          )
+        : Node
+        #24
+        _dispatch
+          #24
+          _object
+            list1
+          : List
+          print
+          (
+          )
+        : Object
+        #25
+        _dispatch
+          #25
+          _object
+            list2
+          : List
+          print
+          (
+          )
+        : Object
+        #26
+        _dispatch
+          #26
+          _object
+            list3
+          : List
+          print
+          (
+          )
+        : Object
+        #28
+        _dispatch
+          #28
+          _object
+            list1
+          : List
+          delete
+          (
+          #28
+          _string
+            "hello"
+          : String
+          )
+        : Bool
+        #29
+        _dispatch
+          #29
+          _object
+            list1
+          : List
+          delete
+          (
+          #29
+          _int
+            1
+          : Int
+          )
+        : Bool
+        #30
+        _dispatch
+          #30
+          _object
+            list1
+          : List
+          print
+          (
+          )
+        : Object
+        #32
+        _dispatch
+          #32
+          _object
+            list1
+          : List
+          insertIdx
+          (
+          #32
+          _bool
+            0
+          : Bool
+          #32
+          _dispatch
+            #32
+            _object
+              list1
+            : List
+            length
+            (
+            )
+          : Int
+          )
+        : Bool
+        #33
+        _dispatch
+          #33
+          _object
+            list1
+          : List
+          insertIdx
+          (
+          #33
+          _string
+            "any base object"
+          : String
+          #33
+          _dispatch
+            #33
+            _object
+              list1
+            : List
+            length
+            (
+            )
+          : Int
+          )
+        : Bool
+        #34
+        _dispatch
+          #34
+          _object
+            list1
+          : List
+          insertIdx
+          (
+          #34
+          _neg
+            #34
+            _int
+              1234567890
+            : Int
+          : Int
+          #34
+          _dispatch
+            #34
+            _object
+              list1
+            : List
+            length
+            (
+            )
+          : Int
+          )
+        : Bool
+        #35
+        _dispatch
+          #35
+          _object
+            list1
+          : List
+          print
+          (
+          )
+        : Object
+        #37
+        _dispatch
+          #37
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #37
+          _string
+            "list1.search(1)"
+          : String
+          #37
+          _dispatch
+            #37
+            _object
+              list1
+            : List
+            search
+            (
+            #37
+            _int
+              1
+            : Int
+            )
+          : Bool
+          )
+        : IO
+        #38
+        _dispatch
+          #38
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #38
+          _string
+            "list1.search(true)"
+          : String
+          #38
+          _dispatch
+            #38
+            _object
+              list1
+            : List
+            search
+            (
+            #38
+            _bool
+              1
+            : Bool
+            )
+          : Bool
+          )
+        : IO
+        #40
+        _dispatch
+          #40
+          _object
+            list1
+          : List
+          deleteIdx
+          (
+          #40
+          _sub
+            #40
+            _dispatch
+              #40
+              _object
+                list1
+              : List
+              length
+              (
+              )
+            : Int
+            #40
+            _int
+              1
+            : Int
+          : Int
+          )
+        : Bool
+        #41
+        _dispatch
+          #41
+          _object
+            list1
+          : List
+          print
+          (
+          )
+        : Object
+        #42
+        _dispatch
+          #42
+          _object
+            list1
+          : List
+          deleteIdx
+          (
+          #42
+          _int
+            0
+          : Int
+          )
+        : Bool
+        #43
+        _dispatch
+          #43
+          _object
+            list1
+          : List
+          print
+          (
+          )
+        : Object
+        #47
+        _dispatch
+          #47
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #47
+          _string
+            "list1.valx(0)"
+          : String
+          #47
+          _dispatch
+            #47
+            _object
+              list1
+            : List
+            valx
+            (
+            #47
+            _int
+              0
+            : Int
+            )
+          : Object
+          )
+        : IO
+        #48
+        _dispatch
+          #48
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #48
+          _string
+            "list1.valx(1)"
+          : String
+          #48
+          _dispatch
+            #48
+            _object
+              list1
+            : List
+            valx
+            (
+            #48
+            _int
+              1
+            : Int
+            )
+          : Object
+          )
+        : IO
+        #49
+        _dispatch
+          #49
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #49
+          _string
+            "list1.valx(list1.length())"
+          : String
+          #49
+          _dispatch
+            #49
+            _object
+              list1
+            : List
+            valx
+            (
+            #49
+            _dispatch
+              #49
+              _object
+                list1
+              : List
+              length
+              (
+              )
+            : Int
+            )
+          : Object
+          )
+        : IO
+        #50
+        _dispatch
+          #50
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #50
+          _string
+            "list1.isEmpty()"
+          : String
+          #50
+          _dispatch
+            #50
+            _object
+              list1
+            : List
+            isEmpty
+            (
+            )
+          : Bool
+          )
+        : IO
+        #51
+        _dispatch
+          #51
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #51
+          _string
+            "list1.length()"
+          : String
+          #51
+          _dispatch
+            #51
+            _object
+              list1
+            : List
+            length
+            (
+            )
+          : Int
+          )
+        : IO
+        #53
+        _dispatch
+          #53
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #53
+          _string
+            "\n====================================================\n"
+          : String
+          )
+        : SELF_TYPE
+        #55
+        _dispatch
+          #55
+          _object
+            stack1
+          : Stack
+          push
+          (
+          #55
+          _int
+            1
+          : Int
+          )
+        : Bool
+        #56
+        _dispatch
+          #56
+          _object
+            stack1
+          : Stack
+          push
+          (
+          #56
+          _string
+            "hello"
+          : String
+          )
+        : Bool
+        #57
+        _dispatch
+          #57
+          _object
+            stack1
+          : Stack
+          push
+          (
+          #57
+          _bool
+            1
+          : Bool
+          )
+        : Bool
+        #58
+        _dispatch
+          #58
+          _object
+            stack1
+          : Stack
+          print
+          (
+          )
+        : Object
+        #60
+        _dispatch
+          #60
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #60
+          _dispatch
+            #60
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #60
+            _dispatch
+              #60
+              _object
+                stack1
+              : Stack
+              peek
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #61
+        _dispatch
+          #61
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #61
+          _dispatch
+            #61
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #61
+            _dispatch
+              #61
+              _object
+                stack1
+              : Stack
+              peek
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #63
+        _dispatch
+          #63
+          _object
+            dbg
+          : Mylib
+          println
+          (
+          #63
+          _string
+            ""
+          : String
+          )
+        : Mylib
+        #64
+        _dispatch
+          #64
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #64
+          _string
+            "stack1.isEmpty()"
+          : String
+          #64
+          _dispatch
+            #64
+            _object
+              stack1
+            : Stack
+            isEmpty
+            (
+            )
+          : Bool
+          )
+        : IO
+        #65
+        _dispatch
+          #65
+          _object
+            stack1
+          : Stack
+          print
+          (
+          )
+        : Object
+        #67
+        _dispatch
+          #67
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #67
+          _dispatch
+            #67
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #67
+            _dispatch
+              #67
+              _object
+                stack1
+              : Stack
+              pop
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #68
+        _dispatch
+          #68
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #68
+          _dispatch
+            #68
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #68
+            _dispatch
+              #68
+              _object
+                stack1
+              : Stack
+              pop
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #69
+        _dispatch
+          #69
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #69
+          _dispatch
+            #69
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #69
+            _dispatch
+              #69
+              _object
+                stack1
+              : Stack
+              pop
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #70
+        _dispatch
+          #70
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #70
+          _dispatch
+            #70
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #70
+            _dispatch
+              #70
+              _object
+                stack1
+              : Stack
+              pop
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #71
+        _dispatch
+          #71
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #71
+          _string
+            "stack1.isEmpty()"
+          : String
+          #71
+          _dispatch
+            #71
+            _object
+              stack1
+            : Stack
+            isEmpty
+            (
+            )
+          : Bool
+          )
+        : IO
+        #72
+        _dispatch
+          #72
+          _object
+            stack1
+          : Stack
+          print
+          (
+          )
+        : Object
+        #74
+        _dispatch
+          #74
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #74
+          _string
+            "\n====================================================\n"
+          : String
+          )
+        : SELF_TYPE
+        #76
+        _dispatch
+          #76
+          _object
+            queue1
+          : Queue
+          enqueue
+          (
+          #76
+          _int
+            1
+          : Int
+          )
+        : Bool
+        #77
+        _dispatch
+          #77
+          _object
+            queue1
+          : Queue
+          enqueue
+          (
+          #77
+          _string
+            "hello"
+          : String
+          )
+        : Bool
+        #78
+        _dispatch
+          #78
+          _object
+            queue1
+          : Queue
+          enqueue
+          (
+          #78
+          _bool
+            1
+          : Bool
+          )
+        : Bool
+        #79
+        _dispatch
+          #79
+          _object
+            queue1
+          : Queue
+          print
+          (
+          )
+        : Object
+        #81
+        _dispatch
+          #81
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #81
+          _dispatch
+            #81
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #81
+            _dispatch
+              #81
+              _object
+                queue1
+              : Queue
+              front
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #82
+        _dispatch
+          #82
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #82
+          _dispatch
+            #82
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #82
+            _dispatch
+              #82
+              _object
+                queue1
+              : Queue
+              front
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #84
+        _dispatch
+          #84
+          _object
+            dbg
+          : Mylib
+          println
+          (
+          #84
+          _string
+            ""
+          : String
+          )
+        : Mylib
+        #85
+        _dispatch
+          #85
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #85
+          _string
+            "queue1.isEmpty()"
+          : String
+          #85
+          _dispatch
+            #85
+            _object
+              queue1
+            : Queue
+            isEmpty
+            (
+            )
+          : Bool
+          )
+        : IO
+        #86
+        _dispatch
+          #86
+          _object
+            queue1
+          : Queue
+          print
+          (
+          )
+        : Object
+        #88
+        _dispatch
+          #88
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #88
+          _dispatch
+            #88
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #88
+            _dispatch
+              #88
+              _object
+                queue1
+              : Queue
+              dequeue
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #89
+        _dispatch
+          #89
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #89
+          _dispatch
+            #89
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #89
+            _dispatch
+              #89
+              _object
+                queue1
+              : Queue
+              dequeue
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #90
+        _dispatch
+          #90
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #90
+          _dispatch
+            #90
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #90
+            _dispatch
+              #90
+              _object
+                queue1
+              : Queue
+              dequeue
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #91
+        _dispatch
+          #91
+          _object
+            dbg
+          : Mylib
+          printtab
+          (
+          #91
+          _dispatch
+            #91
+            _object
+              dbg
+            : Mylib
+            item2a
+            (
+            #91
+            _dispatch
+              #91
+              _object
+                queue1
+              : Queue
+              dequeue
+              (
+              )
+            : Object
+            )
+          : String
+          )
+        : Mylib
+        #92
+        _dispatch
+          #92
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #92
+          _string
+            "queue1.isEmpty()"
+          : String
+          #92
+          _dispatch
+            #92
+            _object
+              queue1
+            : Queue
+            isEmpty
+            (
+            )
+          : Bool
+          )
+        : IO
+        #93
+        _dispatch
+          #93
+          _object
+            queue1
+          : Queue
+          print
+          (
+          )
+        : Object
+        #95
+        _dispatch
+          #95
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #95
+          _string
+            "\n====================================================\n"
+          : String
+          )
+        : SELF_TYPE
+        #97
+        _dispatch
+          #97
+          _object
+            bst1
+          : BST
+          insert
+          (
+          #97
+          _int
+            90
+          : Int
+          )
+        : Bool
+        #98
+        _dispatch
+          #98
+          _object
+            bst1
+          : BST
+          insert
+          (
+          #98
+          _int
+            24
+          : Int
+          )
+        : Bool
+        #99
+        _dispatch
+          #99
+          _object
+            bst1
+          : BST
+          insert
+          (
+          #99
+          _int
+            102
+          : Int
+          )
+        : Bool
+        #100
+        _dispatch
+          #100
+          _object
+            bst1
+          : BST
+          insert
+          (
+          #100
+          _int
+            333
+          : Int
+          )
+        : Bool
+        #101
+        _dispatch
+          #101
+          _object
+            bst1
+          : BST
+          insert
+          (
+          #101
+          _int
+            77
+          : Int
+          )
+        : Bool
+        #102
+        _dispatch
+          #102
+          _object
+            bst1
+          : BST
+          printInOrder
+          (
+          )
+        : Object
+        #104
+        _dispatch
+          #104
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #104
+          _string
+            "bst1.search(1)"
+          : String
+          #104
+          _dispatch
+            #104
+            _object
+              bst1
+            : BST
+            search
+            (
+            #104
+            _int
+              1
+            : Int
+            )
+          : Bool
+          )
+        : IO
+        #105
+        _dispatch
+          #105
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #105
+          _string
+            "bst1.search(24)"
+          : String
+          #105
+          _dispatch
+            #105
+            _object
+              bst1
+            : BST
+            search
+            (
+            #105
+            _int
+              24
+            : Int
+            )
+          : Bool
+          )
+        : IO
+        #106
+        _dispatch
+          #106
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #106
+          _string
+            "bst1.search(333)"
+          : String
+          #106
+          _dispatch
+            #106
+            _object
+              bst1
+            : BST
+            search
+            (
+            #106
+            _int
+              333
+            : Int
+            )
+          : Bool
+          )
+        : IO
+        #108
+        _dispatch
+          #108
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #108
+          _string
+            "\n====================================================\n"
+          : String
+          )
+        : SELF_TYPE
+        #109
+        _dispatch
+          #109
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #109
+          _int
+            0
+          : Int
+          #109
+          _string
+            "V0"
+          : String
+          )
+        : String
+        #110
+        _dispatch
+          #110
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #110
+          _int
+            1
+          : Int
+          #110
+          _string
+            "V1"
+          : String
+          )
+        : String
+        #111
+        _dispatch
+          #111
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #111
+          _int
+            2
+          : Int
+          #111
+          _string
+            "V2"
+          : String
+          )
+        : String
+        #112
+        _dispatch
+          #112
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #112
+          _int
+            3
+          : Int
+          #112
+          _string
+            "V3"
+          : String
+          )
+        : String
+        #113
+        _dispatch
+          #113
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #113
+          _int
+            4
+          : Int
+          #113
+          _string
+            "V4"
+          : String
+          )
+        : String
+        #114
+        _dispatch
+          #114
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #114
+          _int
+            5
+          : Int
+          #114
+          _string
+            "V5"
+          : String
+          )
+        : String
+        #115
+        _dispatch
+          #115
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #115
+          _int
+            6
+          : Int
+          #115
+          _string
+            "V6"
+          : String
+          )
+        : String
+        #116
+        _dispatch
+          #116
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #116
+          _int
+            7
+          : Int
+          #116
+          _string
+            "V7"
+          : String
+          )
+        : String
+        #117
+        _dispatch
+          #117
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #117
+          _int
+            8
+          : Int
+          #117
+          _string
+            "V8"
+          : String
+          )
+        : String
+        #118
+        _dispatch
+          #118
+          _object
+            ht1
+          : HashTable
+          put
+          (
+          #118
+          _int
+            2
+          : Int
+          #118
+          _string
+            "V2-new"
+          : String
+          )
+        : String
+        #119
+        _dispatch
+          #119
+          _object
+            ht1
+          : HashTable
+          print
+          (
+          )
+        : Object
+        #121
+        _dispatch
+          #121
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #121
+          _string
+            "ht1.get(3)"
+          : String
+          #121
+          _dispatch
+            #121
+            _object
+              ht1
+            : HashTable
+            get
+            (
+            #121
+            _int
+              3
+            : Int
+            )
+          : String
+          )
+        : IO
+        #122
+        _dispatch
+          #122
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #122
+          _string
+            "ht1.get(2)"
+          : String
+          #122
+          _dispatch
+            #122
+            _object
+              ht1
+            : HashTable
+            get
+            (
+            #122
+            _int
+              2
+            : Int
+            )
+          : String
+          )
+        : IO
+        #123
+        _dispatch
+          #123
+          _object
+            dbg
+          : Mylib
+          debug
+          (
+          #123
+          _string
+            "ht1.get(10)"
+          : String
+          #123
+          _dispatch
+            #123
+            _object
+              ht1
+            : HashTable
+            get
+            (
+            #123
+            _int
+              10
+            : Int
+            )
+          : String
+          )
+        : IO
+        #125
+        _dispatch
+          #125
+          _object
+            ht1
+          : HashTable
+          remove
+          (
+          #125
+          _int
+            0
+          : Int
+          )
+        : String
+        #126
+        _dispatch
+          #126
+          _object
+            ht1
+          : HashTable
+          remove
+          (
+          #126
+          _int
+            2
+          : Int
+          )
+        : String
+        #127
+        _dispatch
+          #127
+          _object
+            ht1
+          : HashTable
+          remove
+          (
+          #127
+          _int
+            7
+          : Int
+          )
+        : String
+        #128
+        _dispatch
+          #128
+          _object
+            ht1
+          : HashTable
+          print
+          (
+          )
+        : Object
+        #130
+        _dispatch
+          #130
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #130
+          _string
+            "\n====================================================\n"
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )
+  #8
+  _class
+    Stack
+    List
+    "data-structures.cl"
+    (
+    #9
+    _method
+      stack_init
+      #9
+      _formal
+        nam
+        String
+      Stack
+      #10
+      _block
+        #11
+        _dispatch
+          #11
+          _object
+            self
+          : SELF_TYPE
+          list_init
+          (
+          #11
+          _object
+            nam
+          : String
+          )
+        : List
+        #12
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #17
+    _method
+      push
+      #17
+      _formal
+        item
+        Object
+      Bool
+      #18
+      _dispatch
+        #18
+        _object
+          self
+        : SELF_TYPE
+        insertIdx
+        (
+        #18
+        _object
+          item
+        : Object
+        #18
+        _int
+          0
+        : Int
+        )
+      : Bool
+    #22
+    _method
+      pop
+      Object
+      #23
+      _block
+        #24
+        _cond
+          #24
+          _dispatch
+            #24
+            _object
+              self
+            : SELF_TYPE
+            isEmpty
+            (
+            )
+          : Bool
+          #24
+          _block
+            #25
+            _dispatch
+              #25
+              _new
+                Throw
+              : Throw
+              warning
+              (
+              #25
+              _string
+                "Stack is empty, pop failed."
+              : String
+              )
+            : Object
+          : Object
+          #26
+          _block
+            #27
+            _let
+              topVal
+              Object
+              #27
+              _dispatch
+                #27
+                _dispatch
+                  #27
+                  _object
+                    self
+                  : SELF_TYPE
+                  nodex
+                  (
+                  #27
+                  _int
+                    0
+                  : Int
+                  )
+                : Node
+                val
+                (
+                )
+              : Object
+              #27
+              _block
+                #28
+                _dispatch
+                  #28
+                  _object
+                    self
+                  : SELF_TYPE
+                  deleteIdx
+                  (
+                  #28
+                  _int
+                    0
+                  : Int
+                  )
+                : Bool
+                #29
+                _object
+                  topVal
+                : Object
+              : Object
+            : Object
+          : Object
+        : Object
+      : Object
+    #36
+    _method
+      peek
+      Object
+      #37
+      _cond
+        #37
+        _dispatch
+          #37
+          _object
+            self
+          : SELF_TYPE
+          isEmpty
+          (
+          )
+        : Bool
+        #37
+        _block
+          #38
+          _dispatch
+            #38
+            _new
+              Throw
+            : Throw
+            warning
+            (
+            #38
+            _string
+              "Stack is empty, peek failed."
+            : String
+            )
+          : Object
+        : Object
+        #39
+        _block
+          #40
+          _dispatch
+            #40
+            _dispatch
+              #40
+              _object
+                self
+              : SELF_TYPE
+              nodex
+              (
+              #40
+              _int
+                0
+              : Int
+              )
+            : Node
+            val
+            (
+            )
+          : Object
+        : Object
+      : Object
+    )
+  #48
+  _class
+    Queue
+    List
+    "data-structures.cl"
+    (
+    #49
+    _method
+      queue_init
+      #49
+      _formal
+        nam
+        String
+      Queue
+      #50
+      _block
+        #51
+        _dispatch
+          #51
+          _object
+            self
+          : SELF_TYPE
+          list_init
+          (
+          #51
+          _object
+            nam
+          : String
+          )
+        : List
+        #52
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #57
+    _method
+      enqueue
+      #57
+      _formal
+        item
+        Object
+      Bool
+      #58
+      _dispatch
+        #58
+        _object
+          self
+        : SELF_TYPE
+        insertIdx
+        (
+        #58
+        _object
+          item
+        : Object
+        #58
+        _dispatch
+          #58
+          _object
+            self
+          : SELF_TYPE
+          length
+          (
+          )
+        : Int
+        )
+      : Bool
+    #62
+    _method
+      dequeue
+      Object
+      #63
+      _cond
+        #63
+        _dispatch
+          #63
+          _object
+            self
+          : SELF_TYPE
+          isEmpty
+          (
+          )
+        : Bool
+        #63
+        _block
+          #64
+          _dispatch
+            #64
+            _new
+              Throw
+            : Throw
+            warning
+            (
+            #64
+            _string
+              "Queue is empty, dequeue failed."
+            : String
+            )
+          : Object
+        : Object
+        #65
+        _block
+          #66
+          _let
+            frontVal
+            Object
+            #66
+            _dispatch
+              #66
+              _dispatch
+                #66
+                _object
+                  self
+                : SELF_TYPE
+                nodex
+                (
+                #66
+                _int
+                  0
+                : Int
+                )
+              : Node
+              val
+              (
+              )
+            : Object
+            #66
+            _block
+              #67
+              _dispatch
+                #67
+                _object
+                  self
+                : SELF_TYPE
+                deleteIdx
+                (
+                #67
+                _int
+                  0
+                : Int
+                )
+              : Bool
+              #68
+              _object
+                frontVal
+              : Object
+            : Object
+          : Object
+        : Object
+      : Object
+    #74
+    _method
+      front
+      Object
+      #75
+      _cond
+        #75
+        _dispatch
+          #75
+          _object
+            self
+          : SELF_TYPE
+          isEmpty
+          (
+          )
+        : Bool
+        #75
+        _block
+          #76
+          _dispatch
+            #76
+            _new
+              Throw
+            : Throw
+            warning
+            (
+            #76
+            _string
+              "Queue is empty, front failed."
+            : String
+            )
+          : Object
+        : Object
+        #77
+        _block
+          #78
+          _dispatch
+            #78
+            _dispatch
+              #78
+              _object
+                self
+              : SELF_TYPE
+              nodex
+              (
+              #78
+              _int
+                0
+              : Int
+              )
+            : Node
+            val
+            (
+            )
+          : Object
+        : Object
+      : Object
+    )
+  #86
+  _class
+    BSTNode
+    Node
+    "data-structures.cl"
+    (
+    #87
+    _attr
+      left
+      BSTNode
+      #0
+      _no_expr
+      : _no_type
+    #88
+    _attr
+      right
+      BSTNode
+      #0
+      _no_expr
+      : _no_type
+    #89
+    _method
+      bstnode_init
+      #89
+      _formal
+        v
+        Int
+      BSTNode
+      #90
+      _block
+        #91
+        _dispatch
+          #91
+          _object
+            self
+          : SELF_TYPE
+          node_init
+          (
+          #91
+          _object
+            v
+          : Int
+          )
+        : Node
+        #94
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #98
+    _method
+      left
+      BSTNode
+      #98
+      _object
+        left
+      : BSTNode
+    #99
+    _method
+      right
+      BSTNode
+      #99
+      _object
+        right
+      : BSTNode
+    #101
+    _method
+      setLeft
+      #101
+      _formal
+        n
+        BSTNode
+      BSTNode
+      #101
+      _assign
+        left
+        #101
+        _object
+          n
+        : BSTNode
+      : BSTNode
+    #102
+    _method
+      setRight
+      #102
+      _formal
+        n
+        BSTNode
+      BSTNode
+      #102
+      _assign
+        right
+        #102
+        _object
+          n
+        : BSTNode
+      : BSTNode
+    #104
+    _method
+      value
+      Int
+      #105
+      _typcase
+        #105
+        _object
+          val
+        : Object
+        #106
+        _branch
+          i
+          Int
+          #106
+          _object
+            i
+          : Int
+      : Int
+    )
+  #112
+  _class
+    BST
+    Object
+    "data-structures.cl"
+    (
+    #113
+    _attr
+      root
+      BSTNode
+      #0
+      _no_expr
+      : _no_type
+    #114
+    _attr
+      name
+      String
+      #0
+      _no_expr
+      : _no_type
+    #115
+    _attr
+      size
+      Int
+      #115
+      _int
+        0
+      : Int
+    #117
+    _method
+      bst_init
+      #117
+      _formal
+        nam
+        String
+      BST
+      #118
+      _block
+        #119
+        _assign
+          name
+          #119
+          _object
+            nam
+          : String
+        : String
+        #121
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #126
+    _method
+      insert
+      #126
+      _formal
+        value
+        Int
+      Bool
+      #127
+      _let
+        newNode
+        BSTNode
+        #127
+        _dispatch
+          #127
+          _new
+            BSTNode
+          : BSTNode
+          bstnode_init
+          (
+          #127
+          _object
+            value
+          : Int
+          )
+        : BSTNode
+        #127
+        _block
+          #128
+          _cond
+            #128
+            _isvoid
+              #128
+              _object
+                root
+              : BSTNode
+            : Bool
+            #128
+            _block
+              #129
+              _assign
+                root
+                #129
+                _object
+                  newNode
+                : BSTNode
+              : BSTNode
+              #130
+              _assign
+                size
+                #130
+                _plus
+                  #130
+                  _object
+                    size
+                  : Int
+                  #130
+                  _int
+                    1
+                  : Int
+                : Int
+              : Int
+              #131
+              _bool
+                1
+              : Bool
+            : Bool
+            #132
+            _block
+              #133
+              _dispatch
+                #133
+                _object
+                  self
+                : SELF_TYPE
+                insertHelper
+                (
+                #133
+                _object
+                  root
+                : BSTNode
+                #133
+                _object
+                  newNode
+                : BSTNode
+                )
+              : Object
+              #134
+              _assign
+                size
+                #134
+                _plus
+                  #134
+                  _object
+                    size
+                  : Int
+                  #134
+                  _int
+                    1
+                  : Int
+                : Int
+              : Int
+              #135
+              _bool
+                1
+              : Bool
+            : Bool
+          : Bool
+        : Bool
+      : Bool
+    #141
+    _method
+      insertHelper
+      #141
+      _formal
+        current
+        BSTNode
+      #141
+      _formal
+        newNode
+        BSTNode
+      Object
+      #142
+      _let
+        curVal
+        Int
+        #142
+        _dispatch
+          #142
+          _new
+            Mylib
+          : Mylib
+          item2i
+          (
+          #142
+          _dispatch
+            #142
+            _object
+              current
+            : BSTNode
+            val
+            (
+            )
+          : Object
+          )
+        : Int
+        #143
+        _let
+          newVal
+          Int
+          #143
+          _dispatch
+            #143
+            _new
+              Mylib
+            : Mylib
+            item2i
+            (
+            #143
+            _dispatch
+              #143
+              _object
+                newNode
+              : BSTNode
+              val
+              (
+              )
+            : Object
+            )
+          : Int
+          #143
+          _block
+            #144
+            _cond
+              #144
+              _lt
+                #144
+                _object
+                  newVal
+                : Int
+                #144
+                _object
+                  curVal
+                : Int
+              : Bool
+              #145
+              _cond
+                #145
+                _isvoid
+                  #145
+                  _dispatch
+                    #145
+                    _object
+                      current
+                    : BSTNode
+                    left
+                    (
+                    )
+                  : BSTNode
+                : Bool
+                #146
+                _dispatch
+                  #146
+                  _object
+                    current
+                  : BSTNode
+                  setLeft
+                  (
+                  #146
+                  _object
+                    newNode
+                  : BSTNode
+                  )
+                : BSTNode
+                #148
+                _dispatch
+                  #148
+                  _object
+                    self
+                  : SELF_TYPE
+                  insertHelper
+                  (
+                  #148
+                  _dispatch
+                    #148
+                    _object
+                      current
+                    : BSTNode
+                    left
+                    (
+                    )
+                  : BSTNode
+                  #148
+                  _object
+                    newNode
+                  : BSTNode
+                  )
+                : Object
+              : Object
+              #151
+              _cond
+                #151
+                _isvoid
+                  #151
+                  _dispatch
+                    #151
+                    _object
+                      current
+                    : BSTNode
+                    right
+                    (
+                    )
+                  : BSTNode
+                : Bool
+                #152
+                _dispatch
+                  #152
+                  _object
+                    current
+                  : BSTNode
+                  setRight
+                  (
+                  #152
+                  _object
+                    newNode
+                  : BSTNode
+                  )
+                : BSTNode
+                #154
+                _dispatch
+                  #154
+                  _object
+                    self
+                  : SELF_TYPE
+                  insertHelper
+                  (
+                  #154
+                  _dispatch
+                    #154
+                    _object
+                      current
+                    : BSTNode
+                    right
+                    (
+                    )
+                  : BSTNode
+                  #154
+                  _object
+                    newNode
+                  : BSTNode
+                  )
+                : Object
+              : Object
+            : Object
+          : Object
+        : Object
+      : Object
+    #161
+    _method
+      search
+      #161
+      _formal
+        value
+        Int
+      Bool
+      #162
+      _cond
+        #162
+        _isvoid
+          #162
+          _object
+            root
+          : BSTNode
+        : Bool
+        #163
+        _bool
+          0
+        : Bool
+        #165
+        _dispatch
+          #165
+          _object
+            self
+          : SELF_TYPE
+          searchHelper
+          (
+          #165
+          _object
+            root
+          : BSTNode
+          #165
+          _object
+            value
+          : Int
+          )
+        : Bool
+      : Bool
+    #170
+    _method
+      searchHelper
+      #170
+      _formal
+        current
+        BSTNode
+      #170
+      _formal
+        value
+        Int
+      Bool
+      #171
+      _cond
+        #171
+        _isvoid
+          #171
+          _object
+            current
+          : BSTNode
+        : Bool
+        #172
+        _bool
+          0
+        : Bool
+        #174
+        _let
+          curVal
+          Int
+          #174
+          _typcase
+            #174
+            _dispatch
+              #174
+              _object
+                current
+              : BSTNode
+              val
+              (
+              )
+            : Object
+            #174
+            _branch
+              i
+              Int
+              #174
+              _object
+                i
+              : Int
+          : Int
+          #174
+          _block
+            #175
+            _cond
+              #175
+              _eq
+                #175
+                _object
+                  value
+                : Int
+                #175
+                _object
+                  curVal
+                : Int
+              : Bool
+              #176
+              _bool
+                1
+              : Bool
+              #177
+              _cond
+                #177
+                _lt
+                  #177
+                  _object
+                    value
+                  : Int
+                  #177
+                  _object
+                    curVal
+                  : Int
+                : Bool
+                #178
+                _dispatch
+                  #178
+                  _object
+                    self
+                  : SELF_TYPE
+                  searchHelper
+                  (
+                  #178
+                  _dispatch
+                    #178
+                    _object
+                      current
+                    : BSTNode
+                    left
+                    (
+                    )
+                  : BSTNode
+                  #178
+                  _object
+                    value
+                  : Int
+                  )
+                : Bool
+                #180
+                _dispatch
+                  #180
+                  _object
+                    self
+                  : SELF_TYPE
+                  searchHelper
+                  (
+                  #180
+                  _dispatch
+                    #180
+                    _object
+                      current
+                    : BSTNode
+                    right
+                    (
+                    )
+                  : BSTNode
+                  #180
+                  _object
+                    value
+                  : Int
+                  )
+                : Bool
+              : Bool
+            : Bool
+          : Bool
+        : Bool
+      : Bool
+    #187
+    _method
+      delete
+      #187
+      _formal
+        value
+        Int
+      Bool
+      #188
+      _let
+        result
+        Bool
+        #188
+        _bool
+          0
+        : Bool
+        #188
+        _block
+          #189
+          _cond
+            #189
+            _isvoid
+              #189
+              _object
+                root
+              : BSTNode
+            : Bool
+            #190
+            _bool
+              0
+            : Bool
+            #191
+            _block
+              #192
+              _assign
+                root
+                #192
+                _dispatch
+                  #192
+                  _object
+                    self
+                  : SELF_TYPE
+                  deleteHelper
+                  (
+                  #192
+                  _object
+                    root
+                  : BSTNode
+                  #192
+                  _object
+                    value
+                  : Int
+                  #192
+                  _object
+                    result
+                  : Bool
+                  )
+                : BSTNode
+              : BSTNode
+              #193
+              _cond
+                #193
+                _object
+                  result
+                : Bool
+                #193
+                _assign
+                  size
+                  #193
+                  _sub
+                    #193
+                    _object
+                      size
+                    : Int
+                    #193
+                    _int
+                      1
+                    : Int
+                  : Int
+                : Int
+                #193
+                _int
+                  0
+                : Int
+              : Int
+              #194
+              _object
+                result
+              : Bool
+            : Bool
+          : Bool
+        : Bool
+      : Bool
+    #201
+    _method
+      deleteHelper
+      #201
+      _formal
+        current
+        BSTNode
+      #201
+      _formal
+        value
+        Int
+      #201
+      _formal
+        result
+        Bool
+      BSTNode
+      #202
+      _cond
+        #202
+        _isvoid
+          #202
+          _object
+            current
+          : BSTNode
+        : Bool
+        #203
+        _object
+          current
+        : BSTNode
+        #205
+        _let
+          curVal
+          Int
+          #205
+          _dispatch
+            #205
+            _new
+              Mylib
+            : Mylib
+            item2i
+            (
+            #205
+            _dispatch
+              #205
+              _object
+                current
+              : BSTNode
+              val
+              (
+              )
+            : Object
+            )
+          : Int
+          #205
+          _block
+            #206
+            _cond
+              #206
+              _lt
+                #206
+                _object
+                  value
+                : Int
+                #206
+                _object
+                  curVal
+                : Int
+              : Bool
+              #207
+              _dispatch
+                #207
+                _object
+                  current
+                : BSTNode
+                setLeft
+                (
+                #207
+                _dispatch
+                  #207
+                  _object
+                    self
+                  : SELF_TYPE
+                  deleteHelper
+                  (
+                  #207
+                  _dispatch
+                    #207
+                    _object
+                      current
+                    : BSTNode
+                    left
+                    (
+                    )
+                  : BSTNode
+                  #207
+                  _object
+                    value
+                  : Int
+                  #207
+                  _object
+                    result
+                  : Bool
+                  )
+                : BSTNode
+                )
+              : BSTNode
+              #208
+              _cond
+                #208
+                _comp
+                  #208
+                  _leq
+                    #208
+                    _object
+                      value
+                    : Int
+                    #208
+                    _object
+                      curVal
+                    : Int
+                  : Bool
+                : Bool
+                #209
+                _dispatch
+                  #209
+                  _object
+                    current
+                  : BSTNode
+                  setRight
+                  (
+                  #209
+                  _dispatch
+                    #209
+                    _object
+                      self
+                    : SELF_TYPE
+                    deleteHelper
+                    (
+                    #209
+                    _dispatch
+                      #209
+                      _object
+                        current
+                      : BSTNode
+                      right
+                      (
+                      )
+                    : BSTNode
+                    #209
+                    _object
+                      value
+                    : Int
+                    #209
+                    _object
+                      result
+                    : Bool
+                    )
+                  : BSTNode
+                  )
+                : BSTNode
+                #210
+                _block
+                  #211
+                  _assign
+                    result
+                    #211
+                    _bool
+                      1
+                    : Bool
+                  : Bool
+                  #213
+                  _cond
+                    #213
+                    _dispatch
+                      #213
+                      _new
+                        Op
+                      : Op
+                      and
+                      (
+                      #213
+                      _isvoid
+                        #213
+                        _dispatch
+                          #213
+                          _object
+                            current
+                          : BSTNode
+                          left
+                          (
+                          )
+                        : BSTNode
+                      : Bool
+                      #213
+                      _isvoid
+                        #213
+                        _dispatch
+                          #213
+                          _object
+                            current
+                          : BSTNode
+                          right
+                          (
+                          )
+                        : BSTNode
+                      : Bool
+                      )
+                    : Bool
+                    #214
+                    _typcase
+                      #214
+                      _dispatch
+                        #214
+                        _new
+                          BSTNode
+                        : BSTNode
+                        node_init
+                        (
+                        #214
+                        _new
+                          Object
+                        : Object
+                        )
+                      : Node
+                      #214
+                      _branch
+                        bn
+                        BSTNode
+                        #214
+                        _object
+                          bn
+                        : BSTNode
+                    : BSTNode
+                    #215
+                    _cond
+                      #215
+                      _isvoid
+                        #215
+                        _dispatch
+                          #215
+                          _object
+                            current
+                          : BSTNode
+                          right
+                          (
+                          )
+                        : BSTNode
+                      : Bool
+                      #216
+                      _dispatch
+                        #216
+                        _object
+                          current
+                        : BSTNode
+                        left
+                        (
+                        )
+                      : BSTNode
+                      #217
+                      _cond
+                        #217
+                        _isvoid
+                          #217
+                          _dispatch
+                            #217
+                            _object
+                              current
+                            : BSTNode
+                            left
+                            (
+                            )
+                          : BSTNode
+                        : Bool
+                        #218
+                        _dispatch
+                          #218
+                          _object
+                            current
+                          : BSTNode
+                          right
+                          (
+                          )
+                        : BSTNode
+                        #219
+                        _block
+                          #220
+                          _let
+                            successorVal
+                            Int
+                            #220
+                            _dispatch
+                              #220
+                              _object
+                                self
+                              : SELF_TYPE
+                              findMinVal
+                              (
+                              #220
+                              _dispatch
+                                #220
+                                _object
+                                  current
+                                : BSTNode
+                                right
+                                (
+                                )
+                              : BSTNode
+                              )
+                            : Int
+                            #220
+                            _block
+                              #221
+                              _dispatch
+                                #221
+                                _object
+                                  current
+                                : BSTNode
+                                assign
+                                (
+                                #221
+                                _object
+                                  successorVal
+                                : Int
+                                )
+                              : Object
+                              #222
+                              _dispatch
+                                #222
+                                _object
+                                  current
+                                : BSTNode
+                                setRight
+                                (
+                                #222
+                                _dispatch
+                                  #222
+                                  _object
+                                    self
+                                  : SELF_TYPE
+                                  deleteMin
+                                  (
+                                  #222
+                                  _dispatch
+                                    #222
+                                    _object
+                                      current
+                                    : BSTNode
+                                    right
+                                    (
+                                    )
+                                  : BSTNode
+                                  )
+                                : BSTNode
+                                )
+                              : BSTNode
+                              #223
+                              _object
+                                current
+                              : BSTNode
+                            : BSTNode
+                          : BSTNode
+                        : BSTNode
+                      : BSTNode
+                    : BSTNode
+                  : BSTNode
+                : BSTNode
+              : BSTNode
+            : BSTNode
+          : BSTNode
+        : BSTNode
+      : BSTNode
+    #232
+    _method
+      findMinVal
+      #232
+      _formal
+        node
+        BSTNode
+      Int
+      #233
+      _cond
+        #233
+        _isvoid
+          #233
+          _dispatch
+            #233
+            _object
+              node
+            : BSTNode
+            left
+            (
+            )
+          : BSTNode
+        : Bool
+        #234
+        _typcase
+          #234
+          _dispatch
+            #234
+            _object
+              node
+            : BSTNode
+            val
+            (
+            )
+          : Object
+          #234
+          _branch
+            i
+            Int
+            #234
+            _object
+              i
+            : Int
+        : Int
+        #236
+        _dispatch
+          #236
+          _object
+            self
+          : SELF_TYPE
+          findMinVal
+          (
+          #236
+          _dispatch
+            #236
+            _object
+              node
+            : BSTNode
+            left
+            (
+            )
+          : BSTNode
+          )
+        : Int
+      : Int
+    #241
+    _method
+      deleteMin
+      #241
+      _formal
+        node
+        BSTNode
+      BSTNode
+      #242
+      _cond
+        #242
+        _isvoid
+          #242
+          _dispatch
+            #242
+            _object
+              node
+            : BSTNode
+            left
+            (
+            )
+          : BSTNode
+        : Bool
+        #243
+        _dispatch
+          #243
+          _object
+            node
+          : BSTNode
+          right
+          (
+          )
+        : BSTNode
+        #244
+        _block
+          #245
+          _dispatch
+            #245
+            _object
+              node
+            : BSTNode
+            setLeft
+            (
+            #245
+            _dispatch
+              #245
+              _object
+                self
+              : SELF_TYPE
+              deleteMin
+              (
+              #245
+              _dispatch
+                #245
+                _object
+                  node
+                : BSTNode
+                left
+                (
+                )
+              : BSTNode
+              )
+            : BSTNode
+            )
+          : BSTNode
+          #246
+          _object
+            node
+          : BSTNode
+        : BSTNode
+      : BSTNode
+    #252
+    _method
+      printInOrder
+      Object
+      #253
+      _block
+        #254
+        _dispatch
+          #254
+          _dispatch
+            #254
+            _new
+              IO
+            : IO
+            out_string
+            (
+            #254
+            _object
+              name
+            : String
+            )
+          : IO
+          out_string
+          (
+          #254
+          _string
+            " => "
+          : String
+          )
+        : IO
+        #255
+        _cond
+          #255
+          _isvoid
+            #255
+            _object
+              root
+            : BSTNode
+          : Bool
+          #256
+          _dispatch
+            #256
+            _new
+              IO
+            : IO
+            out_string
+            (
+            #256
+            _string
+              "Empty BST\n"
+            : String
+            )
+          : IO
+          #257
+          _block
+            #258
+            _dispatch
+              #258
+              _object
+                self
+              : SELF_TYPE
+              inOrder
+              (
+              #258
+              _object
+                root
+              : BSTNode
+              )
+            : Object
+            #259
+            _dispatch
+              #259
+              _new
+                IO
+              : IO
+              out_string
+              (
+              #259
+              _string
+                "\n"
+              : String
+              )
+            : IO
+          : IO
+        : IO
+      : IO
+    #266
+    _method
+      inOrder
+      #266
+      _formal
+        node
+        BSTNode
+      Object
+      #267
+      _cond
+        #267
+        _comp
+          #267
+          _isvoid
+            #267
+            _object
+              node
+            : BSTNode
+          : Bool
+        : Bool
+        #267
+        _block
+          #268
+          _dispatch
+            #268
+            _object
+              self
+            : SELF_TYPE
+            inOrder
+            (
+            #268
+            _dispatch
+              #268
+              _object
+                node
+              : BSTNode
+              left
+              (
+              )
+            : BSTNode
+            )
+          : Object
+          #269
+          _dispatch
+            #269
+            _dispatch
+              #269
+              _new
+                IO
+              : IO
+              out_string
+              (
+              #269
+              _dispatch
+                #269
+                _new
+                  A2I
+                : A2I
+                i2a
+                (
+                #269
+                _typcase
+                  #269
+                  _dispatch
+                    #269
+                    _object
+                      node
+                    : BSTNode
+                    val
+                    (
+                    )
+                  : Object
+                  #269
+                  _branch
+                    i
+                    Int
+                    #269
+                    _object
+                      i
+                    : Int
+                : Int
+                )
+              : String
+              )
+            : IO
+            out_string
+            (
+            #269
+            _string
+              " "
+            : String
+            )
+          : IO
+          #270
+          _dispatch
+            #270
+            _object
+              self
+            : SELF_TYPE
+            inOrder
+            (
+            #270
+            _dispatch
+              #270
+              _object
+                node
+              : BSTNode
+              right
+              (
+              )
+            : BSTNode
+            )
+          : Object
+        : Object
+        #271
+        _int
+          0
+        : Int
+      : Object
+    #275
+    _method
+      size
+      Int
+      #275
+      _object
+        size
+      : Int
+    #278
+    _method
+      isEmpty
+      Bool
+      #278
+      _eq
+        #278
+        _object
+          size
+        : Int
+        #278
+        _int
+          0
+        : Int
+      : Bool
+    )
+  #377
+  _class
+    Entry
+    Object
+    "data-structures.cl"
+    (
+    #378
+    _attr
+      key
+      Int
+      #0
+      _no_expr
+      : _no_type
+    #379
+    _attr
+      value
+      String
+      #0
+      _no_expr
+      : _no_type
+    #381
+    _method
+      init
+      #381
+      _formal
+        k
+        Int
+      #381
+      _formal
+        v
+        String
+      Entry
+      #382
+      _block
+        #383
+        _assign
+          key
+          #383
+          _object
+            k
+          : Int
+        : Int
+        #384
+        _assign
+          value
+          #384
+          _object
+            v
+          : String
+        : String
+        #385
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #389
+    _method
+      getKey
+      Int
+      #389
+      _object
+        key
+      : Int
+    #390
+    _method
+      getValue
+      String
+      #390
+      _object
+        value
+      : String
+    #391
+    _method
+      setValue
+      #391
+      _formal
+        v
+        String
+      String
+      #392
+      _let
+        old
+        String
+        #392
+        _object
+          value
+        : String
+        #392
+        _block
+          #393
+          _assign
+            value
+            #393
+            _object
+              v
+            : String
+          : String
+          #394
+          _object
+            old
+          : String
+        : String
+      : String
+    #398
+    _method
+      equalsKey
+      #398
+      _formal
+        k
+        Int
+      Bool
+      #398
+      _eq
+        #398
+        _object
+          key
+        : Int
+        #398
+        _object
+          k
+        : Int
+      : Bool
+    #400
+    _method
+      print
+      Object
+      #401
+      _dispatch
+        #401
+        _dispatch
+          #401
+          _dispatch
+            #401
+            _dispatch
+              #401
+              _dispatch
+                #401
+                _new
+                  IO
+                : IO
+                out_string
+                (
+                #401
+                _string
+                  "("
+                : String
+                )
+              : IO
+              out_string
+              (
+              #401
+              _dispatch
+                #401
+                _new
+                  A2I
+                : A2I
+                i2a
+                (
+                #401
+                _object
+                  key
+                : Int
+                )
+              : String
+              )
+            : IO
+            out_string
+            (
+            #401
+            _string
+              ", \""
+            : String
+            )
+          : IO
+          out_string
+          (
+          #401
+          _object
+            value
+          : String
+          )
+        : IO
+        out_string
+        (
+        #401
+        _string
+          "\")"
+        : String
+        )
+      : IO
+    )
+  #406
+  _class
+    HashTable
+    Object
+    "data-structures.cl"
+    (
+    #407
+    _attr
+      buckets
+      List
+      #0
+      _no_expr
+      : _no_type
+    #408
+    _attr
+      capacity
+      Int
+      #0
+      _no_expr
+      : _no_type
+    #409
+    _attr
+      size
+      Int
+      #409
+      _int
+        0
+      : Int
+    #410
+    _attr
+      name
+      String
+      #0
+      _no_expr
+      : _no_type
+    #416
+    _method
+      ht_init
+      #416
+      _formal
+        nam
+        String
+      #416
+      _formal
+        cap
+        Int
+      HashTable
+      #417
+      _block
+        #418
+        _assign
+          name
+          #418
+          _object
+            nam
+          : String
+        : String
+        #419
+        _assign
+          capacity
+          #419
+          _object
+            cap
+          : Int
+        : Int
+        #420
+        _assign
+          buckets
+          #420
+          _dispatch
+            #420
+            _new
+              List
+            : List
+            list_init
+            (
+            #420
+            _string
+              "HashTable Buckets"
+            : String
+            )
+          : List
+        : List
+        #423
+        _let
+          i
+          Int
+          #423
+          _int
+            0
+          : Int
+          #423
+          _block
+            #424
+            _loop
+              #424
+              _lt
+                #424
+                _object
+                  i
+                : Int
+                #424
+                _object
+                  capacity
+                : Int
+              : Bool
+              #424
+              _block
+                #426
+                _dispatch
+                  #426
+                  _object
+                    buckets
+                  : List
+                  insertIdxN
+                  (
+                  #427
+                  _dispatch
+                    #427
+                    _new
+                      Node
+                    : Node
+                    node_init
+                    (
+                    #428
+                    _dispatch
+                      #428
+                      _new
+                        List
+                      : List
+                      list_init
+                      (
+                      #428
+                      _dispatch
+                        #428
+                        _string
+                          "Bucket "
+                        : String
+                        concat
+                        (
+                        #428
+                        _dispatch
+                          #428
+                          _new
+                            A2I
+                          : A2I
+                          i2a
+                          (
+                          #428
+                          _object
+                            i
+                          : Int
+                          )
+                        : String
+                        )
+                      : String
+                      )
+                    : List
+                    )
+                  : Node
+                  #430
+                  _object
+                    i
+                  : Int
+                  )
+                : Bool
+                #432
+                _assign
+                  i
+                  #432
+                  _plus
+                    #432
+                    _object
+                      i
+                    : Int
+                    #432
+                    _int
+                      1
+                    : Int
+                  : Int
+                : Int
+              : Int
+            : Object
+          : Object
+        : Object
+        #435
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #440
+    _method
+      hashFunc
+      #440
+      _formal
+        key
+        Int
+      Int
+      #441
+      _dispatch
+        #441
+        _new
+          Op
+        : Op
+        mod
+        (
+        #441
+        _object
+          key
+        : Int
+        #441
+        _object
+          capacity
+        : Int
+        )
+      : Int
+    #445
+    _method
+      getBucket
+      #445
+      _formal
+        index
+        Int
+      List
+      #446
+      _let
+        node
+        Node
+        #446
+        _typcase
+          #446
+          _dispatch
+            #446
+            _object
+              buckets
+            : List
+            nodex
+            (
+            #446
+            _object
+              index
+            : Int
+            )
+          : Node
+          #446
+          _branch
+            n
+            Node
+            #446
+            _object
+              n
+            : Node
+        : Node
+        #447
+        _typcase
+          #447
+          _dispatch
+            #447
+            _object
+              node
+            : Node
+            val
+            (
+            )
+          : Object
+          #448
+          _branch
+            b
+            List
+            #448
+            _object
+              b
+            : List
+        : List
+      : List
+    #454
+    _method
+      put
+      #454
+      _formal
+        key
+        Int
+      #454
+      _formal
+        value
+        String
+      String
+      #455
+      _let
+        index
+        Int
+        #455
+        _dispatch
+          #455
+          _object
+            self
+          : SELF_TYPE
+          hashFunc
+          (
+          #455
+          _object
+            key
+          : Int
+          )
+        : Int
+        #456
+        _let
+          bucket
+          List
+          #456
+          _dispatch
+            #456
+            _object
+              self
+            : SELF_TYPE
+            getBucket
+            (
+            #456
+            _object
+              index
+            : Int
+            )
+          : List
+          #457
+          _let
+            i
+            Int
+            #457
+            _int
+              0
+            : Int
+            #458
+            _let
+              found
+              Bool
+              #458
+              _bool
+                0
+              : Bool
+              #459
+              _let
+                oldValue
+                String
+                #459
+                _string
+                  ""
+                : String
+                #460
+                _block
+                  #465
+                  _loop
+                    #465
+                    _dispatch
+                      #465
+                      _new
+                        Op
+                      : Op
+                      and
+                      (
+                      #465
+                      _lt
+                        #465
+                        _object
+                          i
+                        : Int
+                        #465
+                        _dispatch
+                          #465
+                          _object
+                            bucket
+                          : List
+                          length
+                          (
+                          )
+                        : Int
+                      : Bool
+                      #465
+                      _comp
+                        #465
+                        _object
+                          found
+                        : Bool
+                      : Bool
+                      )
+                    : Bool
+                    #466
+                    _let
+                      entryNode
+                      Node
+                      #466
+                      _typcase
+                        #466
+                        _dispatch
+                          #466
+                          _object
+                            bucket
+                          : List
+                          nodex
+                          (
+                          #466
+                          _object
+                            i
+                          : Int
+                          )
+                        : Node
+                        #466
+                        _branch
+                          n
+                          Node
+                          #466
+                          _object
+                            n
+                          : Node
+                      : Node
+                      #467
+                      _let
+                        entry
+                        Entry
+                        #467
+                        _typcase
+                          #467
+                          _dispatch
+                            #467
+                            _object
+                              entryNode
+                            : Node
+                            val
+                            (
+                            )
+                          : Object
+                          #467
+                          _branch
+                            e
+                            Entry
+                            #467
+                            _object
+                              e
+                            : Entry
+                        : Entry
+                        #468
+                        _block
+                          #469
+                          _cond
+                            #469
+                            _dispatch
+                              #469
+                              _object
+                                entry
+                              : Entry
+                              equalsKey
+                              (
+                              #469
+                              _object
+                                key
+                              : Int
+                              )
+                            : Bool
+                            #470
+                            _block
+                              #471
+                              _assign
+                                oldValue
+                                #471
+                                _dispatch
+                                  #471
+                                  _object
+                                    entry
+                                  : Entry
+                                  setValue
+                                  (
+                                  #471
+                                  _object
+                                    value
+                                  : String
+                                  )
+                                : String
+                              : String
+                              #472
+                              _assign
+                                found
+                                #472
+                                _bool
+                                  1
+                                : Bool
+                              : Bool
+                            : Bool
+                            #475
+                            _assign
+                              i
+                              #475
+                              _plus
+                                #475
+                                _object
+                                  i
+                                : Int
+                                #475
+                                _int
+                                  1
+                                : Int
+                              : Int
+                            : Int
+                          : Object
+                        : Object
+                      : Object
+                    : Object
+                  : Object
+                  #481
+                  _cond
+                    #481
+                    _comp
+                      #481
+                      _object
+                        found
+                      : Bool
+                    : Bool
+                    #482
+                    _block
+                      #483
+                      _dispatch
+                        #483
+                        _object
+                          bucket
+                        : List
+                        insert
+                        (
+                        #483
+                        _dispatch
+                          #483
+                          _new
+                            Entry
+                          : Entry
+                          init
+                          (
+                          #483
+                          _object
+                            key
+                          : Int
+                          #483
+                          _object
+                            value
+                          : String
+                          )
+                        : Entry
+                        )
+                      : Bool
+                      #484
+                      _assign
+                        size
+                        #484
+                        _plus
+                          #484
+                          _object
+                            size
+                          : Int
+                          #484
+                          _int
+                            1
+                          : Int
+                        : Int
+                      : Int
+                      #485
+                      _assign
+                        oldValue
+                        #485
+                        _string
+                          ""
+                        : String
+                      : String
+                    : String
+                    #488
+                    _object
+                      oldValue
+                    : String
+                  : String
+                : String
+              : String
+            : String
+          : String
+        : String
+      : String
+    #494
+    _method
+      get
+      #494
+      _formal
+        key
+        Int
+      String
+      #495
+      _let
+        index
+        Int
+        #495
+        _dispatch
+          #495
+          _object
+            self
+          : SELF_TYPE
+          hashFunc
+          (
+          #495
+          _object
+            key
+          : Int
+          )
+        : Int
+        #496
+        _let
+          bucket
+          List
+          #496
+          _dispatch
+            #496
+            _object
+              self
+            : SELF_TYPE
+            getBucket
+            (
+            #496
+            _object
+              index
+            : Int
+            )
+          : List
+          #497
+          _let
+            i
+            Int
+            #497
+            _int
+              0
+            : Int
+            #498
+            _let
+              result
+              String
+              #498
+              _string
+                "=== not exist ==="
+              : String
+              #499
+              _block
+                #500
+                _loop
+                  #500
+                  _dispatch
+                    #500
+                    _new
+                      Op
+                    : Op
+                    and
+                    (
+                    #500
+                    _lt
+                      #500
+                      _object
+                        i
+                      : Int
+                      #500
+                      _dispatch
+                        #500
+                        _object
+                          bucket
+                        : List
+                        length
+                        (
+                        )
+                      : Int
+                    : Bool
+                    #500
+                    _eq
+                      #500
+                      _object
+                        result
+                      : String
+                      #500
+                      _string
+                        "=== not exist ==="
+                      : String
+                    : Bool
+                    )
+                  : Bool
+                  #501
+                  _let
+                    entryNode
+                    Node
+                    #501
+                    _typcase
+                      #501
+                      _dispatch
+                        #501
+                        _object
+                          bucket
+                        : List
+                        nodex
+                        (
+                        #501
+                        _object
+                          i
+                        : Int
+                        )
+                      : Node
+                      #501
+                      _branch
+                        n
+                        Node
+                        #501
+                        _object
+                          n
+                        : Node
+                    : Node
+                    #502
+                    _let
+                      entry
+                      Entry
+                      #502
+                      _typcase
+                        #502
+                        _dispatch
+                          #502
+                          _object
+                            entryNode
+                          : Node
+                          val
+                          (
+                          )
+                        : Object
+                        #502
+                        _branch
+                          e
+                          Entry
+                          #502
+                          _object
+                            e
+                          : Entry
+                      : Entry
+                      #503
+                      _block
+                        #504
+                        _cond
+                          #504
+                          _dispatch
+                            #504
+                            _object
+                              entry
+                            : Entry
+                            equalsKey
+                            (
+                            #504
+                            _object
+                              key
+                            : Int
+                            )
+                          : Bool
+                          #505
+                          _assign
+                            result
+                            #505
+                            _dispatch
+                              #505
+                              _object
+                                entry
+                              : Entry
+                              getValue
+                              (
+                              )
+                            : String
+                          : String
+                          #507
+                          _assign
+                            i
+                            #507
+                            _plus
+                              #507
+                              _object
+                                i
+                              : Int
+                              #507
+                              _int
+                                1
+                              : Int
+                            : Int
+                          : Int
+                        : Object
+                      : Object
+                    : Object
+                  : Object
+                : Object
+                #511
+                _object
+                  result
+                : String
+              : String
+            : String
+          : String
+        : String
+      : String
+    #516
+    _method
+      remove
+      #516
+      _formal
+        key
+        Int
+      String
+      #517
+      _let
+        index
+        Int
+        #517
+        _dispatch
+          #517
+          _object
+            self
+          : SELF_TYPE
+          hashFunc
+          (
+          #517
+          _object
+            key
+          : Int
+          )
+        : Int
+        #518
+        _let
+          bucket
+          List
+          #518
+          _dispatch
+            #518
+            _object
+              self
+            : SELF_TYPE
+            getBucket
+            (
+            #518
+            _object
+              index
+            : Int
+            )
+          : List
+          #519
+          _let
+            i
+            Int
+            #519
+            _int
+              0
+            : Int
+            #520
+            _let
+              removedValue
+              String
+              #520
+              _string
+                ""
+              : String
+              #521
+              _block
+                #522
+                _loop
+                  #522
+                  _dispatch
+                    #522
+                    _new
+                      Op
+                    : Op
+                    and
+                    (
+                    #522
+                    _lt
+                      #522
+                      _object
+                        i
+                      : Int
+                      #522
+                      _dispatch
+                        #522
+                        _object
+                          bucket
+                        : List
+                        length
+                        (
+                        )
+                      : Int
+                    : Bool
+                    #522
+                    _eq
+                      #522
+                      _object
+                        removedValue
+                      : String
+                      #522
+                      _string
+                        ""
+                      : String
+                    : Bool
+                    )
+                  : Bool
+                  #523
+                  _let
+                    entryNode
+                    Node
+                    #523
+                    _typcase
+                      #523
+                      _dispatch
+                        #523
+                        _object
+                          bucket
+                        : List
+                        nodex
+                        (
+                        #523
+                        _object
+                          i
+                        : Int
+                        )
+                      : Node
+                      #523
+                      _branch
+                        n
+                        Node
+                        #523
+                        _object
+                          n
+                        : Node
+                    : Node
+                    #524
+                    _let
+                      entry
+                      Entry
+                      #524
+                      _typcase
+                        #524
+                        _dispatch
+                          #524
+                          _object
+                            entryNode
+                          : Node
+                          val
+                          (
+                          )
+                        : Object
+                        #524
+                        _branch
+                          e
+                          Entry
+                          #524
+                          _object
+                            e
+                          : Entry
+                      : Entry
+                      #525
+                      _block
+                        #526
+                        _cond
+                          #526
+                          _dispatch
+                            #526
+                            _object
+                              entry
+                            : Entry
+                            equalsKey
+                            (
+                            #526
+                            _object
+                              key
+                            : Int
+                            )
+                          : Bool
+                          #527
+                          _block
+                            #528
+                            _assign
+                              removedValue
+                              #528
+                              _dispatch
+                                #528
+                                _object
+                                  entry
+                                : Entry
+                                getValue
+                                (
+                                )
+                              : String
+                            : String
+                            #529
+                            _dispatch
+                              #529
+                              _object
+                                bucket
+                              : List
+                              deleteIdx
+                              (
+                              #529
+                              _object
+                                i
+                              : Int
+                              )
+                            : Bool
+                            #530
+                            _assign
+                              size
+                              #530
+                              _sub
+                                #530
+                                _object
+                                  size
+                                : Int
+                                #530
+                                _int
+                                  1
+                                : Int
+                              : Int
+                            : Int
+                          : Int
+                          #533
+                          _assign
+                            i
+                            #533
+                            _plus
+                              #533
+                              _object
+                                i
+                              : Int
+                              #533
+                              _int
+                                1
+                              : Int
+                            : Int
+                          : Int
+                        : Int
+                      : Int
+                    : Int
+                  : Int
+                : Object
+                #537
+                _object
+                  removedValue
+                : String
+              : String
+            : String
+          : String
+        : String
+      : String
+    #542
+    _method
+      printBucket
+      #542
+      _formal
+        bucket
+        List
+      Object
+      #543
+      _let
+        i
+        Int
+        #543
+        _int
+          0
+        : Int
+        #543
+        _block
+          #544
+          _dispatch
+            #544
+            _new
+              IO
+            : IO
+            out_string
+            (
+            #544
+            _string
+              "["
+            : String
+            )
+          : IO
+          #545
+          _loop
+            #545
+            _lt
+              #545
+              _object
+                i
+              : Int
+              #545
+              _dispatch
+                #545
+                _object
+                  bucket
+                : List
+                length
+                (
+                )
+              : Int
+            : Bool
+            #546
+            _block
+              #548
+              _let
+                entryNode
+                Node
+                #548
+                _typcase
+                  #548
+                  _dispatch
+                    #548
+                    _object
+                      bucket
+                    : List
+                    nodex
+                    (
+                    #548
+                    _object
+                      i
+                    : Int
+                    )
+                  : Node
+                  #548
+                  _branch
+                    n
+                    Node
+                    #548
+                    _object
+                      n
+                    : Node
+                : Node
+                #549
+                _let
+                  entry
+                  Entry
+                  #549
+                  _typcase
+                    #549
+                    _dispatch
+                      #549
+                      _object
+                        entryNode
+                      : Node
+                      val
+                      (
+                      )
+                    : Object
+                    #549
+                    _branch
+                      e
+                      Entry
+                      #549
+                      _object
+                        e
+                      : Entry
+                  : Entry
+                  #550
+                  _block
+                    #551
+                    _dispatch
+                      #551
+                      _object
+                        entry
+                      : Entry
+                      print
+                      (
+                      )
+                    : Object
+                  : Object
+                : Object
+              : Object
+              #555
+              _cond
+                #555
+                _lt
+                  #555
+                  _object
+                    i
+                  : Int
+                  #555
+                  _sub
+                    #555
+                    _dispatch
+                      #555
+                      _object
+                        bucket
+                      : List
+                      length
+                      (
+                      )
+                    : Int
+                    #555
+                    _int
+                      1
+                    : Int
+                  : Int
+                : Bool
+                #556
+                _dispatch
+                  #556
+                  _new
+                    IO
+                  : IO
+                  out_string
+                  (
+                  #556
+                  _string
+                    ", "
+                  : String
+                  )
+                : IO
+                #558
+                _int
+                  0
+                : Int
+              : Object
+              #561
+              _assign
+                i
+                #561
+                _plus
+                  #561
+                  _object
+                    i
+                  : Int
+                  #561
+                  _int
+                    1
+                  : Int
+                : Int
+              : Int
+            : Int
+          : Object
+          #564
+          _dispatch
+            #564
+            _new
+              IO
+            : IO
+            out_string
+            (
+            #564
+            _string
+              "]"
+            : String
+            )
+          : IO
+        : IO
+      : IO
+    #569
+    _method
+      print
+      Object
+      #570
+      _block
+        #571
+        _dispatch
+          #571
+          _dispatch
+            #571
+            _dispatch
+              #571
+              _dispatch
+                #571
+                _dispatch
+                  #571
+                  _dispatch
+                    #571
+                    _new
+                      IO
+                    : IO
+                    out_string
+                    (
+                    #571
+                    _object
+                      name
+                    : String
+                    )
+                  : IO
+                  out_string
+                  (
+                  #571
+                  _string
+                    " (capacity: "
+                  : String
+                  )
+                : IO
+                out_string
+                (
+                #571
+                _dispatch
+                  #571
+                  _new
+                    A2I
+                  : A2I
+                  i2a
+                  (
+                  #571
+                  _object
+                    capacity
+                  : Int
+                  )
+                : String
+                )
+              : IO
+              out_string
+              (
+              #571
+              _string
+                ", size: "
+              : String
+              )
+            : IO
+            out_string
+            (
+            #571
+            _dispatch
+              #571
+              _new
+                A2I
+              : A2I
+              i2a
+              (
+              #571
+              _object
+                size
+              : Int
+              )
+            : String
+            )
+          : IO
+          out_string
+          (
+          #571
+          _string
+            ")\n"
+          : String
+          )
+        : IO
+        #572
+        _let
+          i
+          Int
+          #572
+          _int
+            0
+          : Int
+          #572
+          _block
+            #573
+            _loop
+              #573
+              _lt
+                #573
+                _object
+                  i
+                : Int
+                #573
+                _object
+                  capacity
+                : Int
+              : Bool
+              #573
+              _block
+                #574
+                _let
+                  bucket
+                  List
+                  #574
+                  _dispatch
+                    #574
+                    _object
+                      self
+                    : SELF_TYPE
+                    getBucket
+                    (
+                    #574
+                    _object
+                      i
+                    : Int
+                    )
+                  : List
+                  #574
+                  _block
+                    #575
+                    _dispatch
+                      #575
+                      _dispatch
+                        #575
+                        _dispatch
+                          #575
+                          _dispatch
+                            #575
+                            _new
+                              IO
+                            : IO
+                            out_string
+                            (
+                            #575
+                            _dispatch
+                              #575
+                              _string
+                                "Bucket "
+                              : String
+                              concat
+                              (
+                              #575
+                              _dispatch
+                                #575
+                                _new
+                                  A2I
+                                : A2I
+                                i2a
+                                (
+                                #575
+                                _object
+                                  i
+                                : Int
+                                )
+                              : String
+                              )
+                            : String
+                            )
+                          : IO
+                          out_string
+                          (
+                          #575
+                          _string
+                            " ["
+                          : String
+                          )
+                        : IO
+                        out_string
+                        (
+                        #575
+                        _dispatch
+                          #575
+                          _new
+                            A2I
+                          : A2I
+                          i2a
+                          (
+                          #575
+                          _dispatch
+                            #575
+                            _object
+                              bucket
+                            : List
+                            length
+                            (
+                            )
+                          : Int
+                          )
+                        : String
+                        )
+                      : IO
+                      out_string
+                      (
+                      #575
+                      _string
+                        " entries]: "
+                      : String
+                      )
+                    : IO
+                    #576
+                    _dispatch
+                      #576
+                      _object
+                        self
+                      : SELF_TYPE
+                      printBucket
+                      (
+                      #576
+                      _object
+                        bucket
+                      : List
+                      )
+                    : Object
+                    #577
+                    _dispatch
+                      #577
+                      _new
+                        IO
+                      : IO
+                      out_string
+                      (
+                      #577
+                      _string
+                        "\n"
+                      : String
+                      )
+                    : IO
+                  : IO
+                : IO
+                #579
+                _assign
+                  i
+                  #579
+                  _plus
+                    #579
+                    _object
+                      i
+                    : Int
+                    #579
+                    _int
+                      1
+                    : Int
+                  : Int
+                : Int
+              : Int
+            : Object
+          : Object
+        : Object
+      : Object
+    #586
+    _method
+      getSize
+      Int
+      #586
+      _object
+        size
+      : Int
+    #587
+    _method
+      getCapacity
+      Int
+      #587
+      _object
+        capacity
+      : Int
+    #588
+    _method
+      isEmpty
+      Bool
+      #588
+      _eq
+        #588
+        _object
+          size
+        : Int
+        #588
+        _int
+          0
+        : Int
+      : Bool
+    )
+  #1
+  _class
+    Throw
+    IO
+    "base.cl"
+    (
+    #2
+    _method
+      error
+      #2
+      _formal
+        str
+        String
+      Object
+      #3
+      _block
+        #4
+        _dispatch
+          #4
+          _dispatch
+            #4
+            _dispatch
+              #4
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #4
+              _string
+                "\n==== error info: "
+              : String
+              )
+            : SELF_TYPE
+            out_string
+            (
+            #4
+            _object
+              str
+            : String
+            )
+          : SELF_TYPE
+          out_string
+          (
+          #4
+          _string
+            " ====\n"
+          : String
+          )
+        : SELF_TYPE
+        #5
+        _dispatch
+          #5
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+      : Object
+    #8
+    _method
+      warning
+      #8
+      _formal
+        str
+        String
+      Object
+      #9
+      _dispatch
+        #9
+        _dispatch
+          #9
+          _dispatch
+            #9
+            _object
+              self
+            : SELF_TYPE
+            out_string
+            (
+            #9
+            _string
+              "\n==== warning info: "
+            : String
+            )
+          : SELF_TYPE
+          out_string
+          (
+          #9
+          _object
+            str
+          : String
+          )
+        : SELF_TYPE
+        out_string
+        (
+        #9
+        _string
+          " ====\n"
+        : String
+        )
+      : SELF_TYPE
+    )
+  #13
+  _class
+    Op
+    Object
+    "base.cl"
+    (
+    #15
+    _method
+      and
+      #15
+      _formal
+        a
+        Bool
+      #15
+      _formal
+        b
+        Bool
+      Bool
+      #16
+      _cond
+        #16
+        _object
+          a
+        : Bool
+        #16
+        _object
+          b
+        : Bool
+        #16
+        _bool
+          0
+        : Bool
+      : Bool
+    #20
+    _method
+      or
+      #20
+      _formal
+        a
+        Bool
+      #20
+      _formal
+        b
+        Bool
+      Bool
+      #21
+      _cond
+        #21
+        _object
+          a
+        : Bool
+        #21
+        _bool
+          1
+        : Bool
+        #21
+        _object
+          b
+        : Bool
+      : Bool
+    #25
+    _method
+      xor
+      #25
+      _formal
+        a
+        Bool
+      #25
+      _formal
+        b
+        Bool
+      Bool
+      #26
+      _cond
+        #26
+        _object
+          a
+        : Bool
+        #27
+        _cond
+          #27
+          _object
+            b
+          : Bool
+          #27
+          _bool
+            0
+          : Bool
+          #27
+          _bool
+            1
+          : Bool
+        : Bool
+        #29
+        _cond
+          #29
+          _object
+            b
+          : Bool
+          #29
+          _bool
+            1
+          : Bool
+          #29
+          _bool
+            0
+          : Bool
+        : Bool
+      : Bool
+    #32
+    _method
+      mod
+      #32
+      _formal
+        a
+        Int
+      #32
+      _formal
+        d
+        Int
+      Int
+      #34
+      _block
+        #35
+        _cond
+          #35
+          _leq
+            #35
+            _object
+              d
+            : Int
+            #35
+            _int
+              0
+            : Int
+          : Bool
+          #35
+          _block
+            #36
+            _dispatch
+              #36
+              _new
+                Throw
+              : Throw
+              error
+              (
+              #36
+              _string
+                "Division by zero or minus in Op.mod"
+              : String
+              )
+            : Object
+            #37
+            _int
+              0
+            : Int
+          : Int
+          #38
+          _block
+            #39
+            _let
+              quotient
+              Int
+              #39
+              _divide
+                #39
+                _object
+                  a
+                : Int
+                #39
+                _object
+                  d
+                : Int
+              : Int
+              #39
+              _block
+                #40
+                _cond
+                  #40
+                  _dispatch
+                    #40
+                    _object
+                      self
+                    : SELF_TYPE
+                    and
+                    (
+                    #40
+                    _lt
+                      #40
+                      _object
+                        a
+                      : Int
+                      #40
+                      _int
+                        0
+                      : Int
+                    : Bool
+                    #40
+                    _comp
+                      #40
+                      _eq
+                        #40
+                        _sub
+                          #40
+                          _object
+                            a
+                          : Int
+                          #40
+                          _mul
+                            #40
+                            _object
+                              quotient
+                            : Int
+                            #40
+                            _object
+                              d
+                            : Int
+                          : Int
+                        : Int
+                        #40
+                        _int
+                          0
+                        : Int
+                      : Bool
+                    : Bool
+                    )
+                  : Bool
+                  #40
+                  _block
+                    #41
+                    _assign
+                      quotient
+                      #41
+                      _sub
+                        #41
+                        _object
+                          quotient
+                        : Int
+                        #41
+                        _int
+                          1
+                        : Int
+                      : Int
+                    : Int
+                  : Int
+                  #42
+                  _int
+                    0
+                  : Int
+                : Int
+                #43
+                _sub
+                  #43
+                  _object
+                    a
+                  : Int
+                  #43
+                  _mul
+                    #43
+                    _object
+                      quotient
+                    : Int
+                    #43
+                    _object
+                      d
+                    : Int
+                  : Int
+                : Int
+              : Int
+            : Int
+          : Int
+        : Int
+      : Int
+    )
+  #50
+  _class
+    Mylib
+    IO
+    "base.cl"
+    (
+    #51
+    _method
+      i2b
+      #51
+      _formal
+        int
+        Int
+      Bool
+      #52
+      _cond
+        #52
+        _comp
+          #52
+          _eq
+            #52
+            _object
+              int
+            : Int
+            #52
+            _int
+              0
+            : Int
+          : Bool
+        : Bool
+        #52
+        _bool
+          1
+        : Bool
+        #52
+        _bool
+          0
+        : Bool
+      : Bool
+    #54
+    _method
+      b2a
+      #54
+      _formal
+        bool
+        Bool
+      String
+      #55
+      _cond
+        #55
+        _object
+          bool
+        : Bool
+        #55
+        _string
+          "true"
+        : String
+        #55
+        _string
+          "false"
+        : String
+      : String
+    #57
+    _method
+      item2a
+      #57
+      _formal
+        it
+        Object
+      String
+      #58
+      _cond
+        #58
+        _isvoid
+          #58
+          _object
+            it
+          : Object
+        : Bool
+        #58
+        _block
+          #58
+          _dispatch
+            #58
+            _new
+              Throw
+            : Throw
+            error
+            (
+            #58
+            _string
+              "item2a received void."
+            : String
+            )
+          : Object
+          #58
+          _string
+            ""
+          : String
+        : String
+        #59
+        _typcase
+          #59
+          _object
+            it
+          : Object
+          #60
+          _branch
+            s
+            String
+            #60
+            _object
+              s
+            : String
+          #61
+          _branch
+            i
+            Int
+            #61
+            _dispatch
+              #61
+              _new
+                A2I
+              : A2I
+              i2a
+              (
+              #61
+              _object
+                i
+              : Int
+              )
+            : String
+          #62
+          _branch
+            b
+            Bool
+            #62
+            _dispatch
+              #62
+              _object
+                self
+              : SELF_TYPE
+              b2a
+              (
+              #62
+              _object
+                b
+              : Bool
+              )
+            : String
+          #63
+          _branch
+            o
+            Object
+            #63
+            _string
+              "other type"
+            : String
+        : String
+      : String
+    #67
+    _method
+      item2i
+      #67
+      _formal
+        it
+        Object
+      Int
+      #68
+      _cond
+        #68
+        _isvoid
+          #68
+          _object
+            it
+          : Object
+        : Bool
+        #68
+        _block
+          #68
+          _dispatch
+            #68
+            _new
+              Throw
+            : Throw
+            error
+            (
+            #68
+            _string
+              "item2i received void."
+            : String
+            )
+          : Object
+          #68
+          _int
+            0
+          : Int
+        : Int
+        #69
+        _typcase
+          #69
+          _object
+            it
+          : Object
+          #70
+          _branch
+            i
+            Int
+            #70
+            _object
+              i
+            : Int
+        : Int
+      : Int
+    #74
+    _method
+      item2s
+      #74
+      _formal
+        it
+        Object
+      String
+      #75
+      _cond
+        #75
+        _isvoid
+          #75
+          _object
+            it
+          : Object
+        : Bool
+        #75
+        _block
+          #75
+          _dispatch
+            #75
+            _new
+              Throw
+            : Throw
+            error
+            (
+            #75
+            _string
+              "item2i received void."
+            : String
+            )
+          : Object
+          #75
+          _string
+            ""
+          : String
+        : String
+        #76
+        _typcase
+          #76
+          _object
+            it
+          : Object
+          #77
+          _branch
+            s
+            String
+            #77
+            _object
+              s
+            : String
+        : String
+      : String
+    #81
+    _method
+      item2b
+      #81
+      _formal
+        it
+        Object
+      Bool
+      #82
+      _cond
+        #82
+        _isvoid
+          #82
+          _object
+            it
+          : Object
+        : Bool
+        #82
+        _block
+          #82
+          _dispatch
+            #82
+            _new
+              Throw
+            : Throw
+            error
+            (
+            #82
+            _string
+              "item2i received void."
+            : String
+            )
+          : Object
+          #82
+          _bool
+            0
+          : Bool
+        : Bool
+        #83
+        _typcase
+          #83
+          _object
+            it
+          : Object
+          #84
+          _branch
+            b
+            Bool
+            #84
+            _object
+              b
+            : Bool
+        : Bool
+      : Bool
+    #88
+    _method
+      printspc
+      #88
+      _formal
+        str
+        String
+      Mylib
+      #89
+      _dispatch
+        #89
+        _dispatch
+          #89
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #89
+          _object
+            str
+          : String
+          )
+        : SELF_TYPE
+        out_string
+        (
+        #89
+        _string
+          "  "
+        : String
+        )
+      : SELF_TYPE
+    #91
+    _method
+      printtab
+      #91
+      _formal
+        str
+        String
+      Mylib
+      #92
+      _dispatch
+        #92
+        _dispatch
+          #92
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #92
+          _object
+            str
+          : String
+          )
+        : SELF_TYPE
+        out_string
+        (
+        #92
+        _string
+          "\t"
+        : String
+        )
+      : SELF_TYPE
+    #94
+    _method
+      println
+      #94
+      _formal
+        str
+        String
+      Mylib
+      #95
+      _dispatch
+        #95
+        _dispatch
+          #95
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #95
+          _object
+            str
+          : String
+          )
+        : SELF_TYPE
+        out_string
+        (
+        #95
+        _string
+          "\n"
+        : String
+        )
+      : SELF_TYPE
+    #97
+    _method
+      debug
+      #97
+      _formal
+        str
+        String
+      #97
+      _formal
+        expr
+        Object
+      IO
+      #98
+      _dispatch
+        #98
+        _dispatch
+          #98
+          _dispatch
+            #98
+            _dispatch
+              #98
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #98
+              _object
+                str
+              : String
+              )
+            : SELF_TYPE
+            out_string
+            (
+            #98
+            _string
+              "=> "
+            : String
+            )
+          : SELF_TYPE
+          out_string
+          (
+          #98
+          _dispatch
+            #98
+            _object
+              self
+            : SELF_TYPE
+            item2a
+            (
+            #98
+            _object
+              expr
+            : Object
+            )
+          : String
+          )
+        : SELF_TYPE
+        out_string
+        (
+        #98
+        _string
+          "\n"
+        : String
+        )
+      : SELF_TYPE
+    )
+  #115
+  _class
+    A2I
+    Object
+    "base.cl"
+    (
+    #117
+    _method
+      c2i
+      #117
+      _formal
+        char
+        String
+      Int
+      #118
+      _cond
+        #118
+        _eq
+          #118
+          _object
+            char
+          : String
+          #118
+          _string
+            "0"
+          : String
+        : Bool
+        #118
+        _int
+          0
+        : Int
+        #119
+        _cond
+          #119
+          _eq
+            #119
+            _object
+              char
+            : String
+            #119
+            _string
+              "1"
+            : String
+          : Bool
+          #119
+          _int
+            1
+          : Int
+          #120
+          _cond
+            #120
+            _eq
+              #120
+              _object
+                char
+              : String
+              #120
+              _string
+                "2"
+              : String
+            : Bool
+            #120
+            _int
+              2
+            : Int
+            #121
+            _cond
+              #121
+              _eq
+                #121
+                _object
+                  char
+                : String
+                #121
+                _string
+                  "3"
+                : String
+              : Bool
+              #121
+              _int
+                3
+              : Int
+              #122
+              _cond
+                #122
+                _eq
+                  #122
+                  _object
+                    char
+                  : String
+                  #122
+                  _string
+                    "4"
+                  : String
+                : Bool
+                #122
+                _int
+                  4
+                : Int
+                #123
+                _cond
+                  #123
+                  _eq
+                    #123
+                    _object
+                      char
+                    : String
+                    #123
+                    _string
+                      "5"
+                    : String
+                  : Bool
+                  #123
+                  _int
+                    5
+                  : Int
+                  #124
+                  _cond
+                    #124
+                    _eq
+                      #124
+                      _object
+                        char
+                      : String
+                      #124
+                      _string
+                        "6"
+                      : String
+                    : Bool
+                    #124
+                    _int
+                      6
+                    : Int
+                    #125
+                    _cond
+                      #125
+                      _eq
+                        #125
+                        _object
+                          char
+                        : String
+                        #125
+                        _string
+                          "7"
+                        : String
+                      : Bool
+                      #125
+                      _int
+                        7
+                      : Int
+                      #126
+                      _cond
+                        #126
+                        _eq
+                          #126
+                          _object
+                            char
+                          : String
+                          #126
+                          _string
+                            "8"
+                          : String
+                        : Bool
+                        #126
+                        _int
+                          8
+                        : Int
+                        #127
+                        _cond
+                          #127
+                          _eq
+                            #127
+                            _object
+                              char
+                            : String
+                            #127
+                            _string
+                              "9"
+                            : String
+                          : Bool
+                          #127
+                          _int
+                            9
+                          : Int
+                          #128
+                          _block
+                            #128
+                            _dispatch
+                              #128
+                              _object
+                                self
+                              : SELF_TYPE
+                              abort
+                              (
+                              )
+                            : Object
+                            #128
+                            _int
+                              0
+                            : Int
+                          : Int
+                        : Int
+                      : Int
+                    : Int
+                  : Int
+                : Int
+              : Int
+            : Int
+          : Int
+        : Int
+      : Int
+    #135
+    _method
+      i2c
+      #135
+      _formal
+        i
+        Int
+      String
+      #136
+      _cond
+        #136
+        _eq
+          #136
+          _object
+            i
+          : Int
+          #136
+          _int
+            0
+          : Int
+        : Bool
+        #136
+        _string
+          "0"
+        : String
+        #137
+        _cond
+          #137
+          _eq
+            #137
+            _object
+              i
+            : Int
+            #137
+            _int
+              1
+            : Int
+          : Bool
+          #137
+          _string
+            "1"
+          : String
+          #138
+          _cond
+            #138
+            _eq
+              #138
+              _object
+                i
+              : Int
+              #138
+              _int
+                2
+              : Int
+            : Bool
+            #138
+            _string
+              "2"
+            : String
+            #139
+            _cond
+              #139
+              _eq
+                #139
+                _object
+                  i
+                : Int
+                #139
+                _int
+                  3
+                : Int
+              : Bool
+              #139
+              _string
+                "3"
+              : String
+              #140
+              _cond
+                #140
+                _eq
+                  #140
+                  _object
+                    i
+                  : Int
+                  #140
+                  _int
+                    4
+                  : Int
+                : Bool
+                #140
+                _string
+                  "4"
+                : String
+                #141
+                _cond
+                  #141
+                  _eq
+                    #141
+                    _object
+                      i
+                    : Int
+                    #141
+                    _int
+                      5
+                    : Int
+                  : Bool
+                  #141
+                  _string
+                    "5"
+                  : String
+                  #142
+                  _cond
+                    #142
+                    _eq
+                      #142
+                      _object
+                        i
+                      : Int
+                      #142
+                      _int
+                        6
+                      : Int
+                    : Bool
+                    #142
+                    _string
+                      "6"
+                    : String
+                    #143
+                    _cond
+                      #143
+                      _eq
+                        #143
+                        _object
+                          i
+                        : Int
+                        #143
+                        _int
+                          7
+                        : Int
+                      : Bool
+                      #143
+                      _string
+                        "7"
+                      : String
+                      #144
+                      _cond
+                        #144
+                        _eq
+                          #144
+                          _object
+                            i
+                          : Int
+                          #144
+                          _int
+                            8
+                          : Int
+                        : Bool
+                        #144
+                        _string
+                          "8"
+                        : String
+                        #145
+                        _cond
+                          #145
+                          _eq
+                            #145
+                            _object
+                              i
+                            : Int
+                            #145
+                            _int
+                              9
+                            : Int
+                          : Bool
+                          #145
+                          _string
+                            "9"
+                          : String
+                          #146
+                          _block
+                            #146
+                            _dispatch
+                              #146
+                              _object
+                                self
+                              : SELF_TYPE
+                              abort
+                              (
+                              )
+                            : Object
+                            #146
+                            _string
+                              ""
+                            : String
+                          : String
+                        : String
+                      : String
+                    : String
+                  : String
+                : String
+              : String
+            : String
+          : String
+        : String
+      : String
+    #158
+    _method
+      a2i
+      #158
+      _formal
+        s
+        String
+      Int
+      #159
+      _cond
+        #159
+        _eq
+          #159
+          _dispatch
+            #159
+            _object
+              s
+            : String
+            length
+            (
+            )
+          : Int
+          #159
+          _int
+            0
+          : Int
+        : Bool
+        #159
+        _int
+          0
+        : Int
+        #160
+        _cond
+          #160
+          _eq
+            #160
+            _dispatch
+              #160
+              _object
+                s
+              : String
+              substr
+              (
+              #160
+              _int
+                0
+              : Int
+              #160
+              _int
+                1
+              : Int
+              )
+            : String
+            #160
+            _string
+              "-"
+            : String
+          : Bool
+          #160
+          _neg
+            #160
+            _dispatch
+              #160
+              _object
+                self
+              : SELF_TYPE
+              a2i_aux
+              (
+              #160
+              _dispatch
+                #160
+                _object
+                  s
+                : String
+                substr
+                (
+                #160
+                _int
+                  1
+                : Int
+                #160
+                _sub
+                  #160
+                  _dispatch
+                    #160
+                    _object
+                      s
+                    : String
+                    length
+                    (
+                    )
+                  : Int
+                  #160
+                  _int
+                    1
+                  : Int
+                : Int
+                )
+              : String
+              )
+            : Int
+          : Int
+          #161
+          _cond
+            #161
+            _eq
+              #161
+              _dispatch
+                #161
+                _object
+                  s
+                : String
+                substr
+                (
+                #161
+                _int
+                  0
+                : Int
+                #161
+                _int
+                  1
+                : Int
+                )
+              : String
+              #161
+              _string
+                "+"
+              : String
+            : Bool
+            #161
+            _dispatch
+              #161
+              _object
+                self
+              : SELF_TYPE
+              a2i_aux
+              (
+              #161
+              _dispatch
+                #161
+                _object
+                  s
+                : String
+                substr
+                (
+                #161
+                _int
+                  1
+                : Int
+                #161
+                _sub
+                  #161
+                  _dispatch
+                    #161
+                    _object
+                      s
+                    : String
+                    length
+                    (
+                    )
+                  : Int
+                  #161
+                  _int
+                    1
+                  : Int
+                : Int
+                )
+              : String
+              )
+            : Int
+            #162
+            _dispatch
+              #162
+              _object
+                self
+              : SELF_TYPE
+              a2i_aux
+              (
+              #162
+              _object
+                s
+              : String
+              )
+            : Int
+          : Int
+        : Int
+      : Int
+    #170
+    _method
+      a2i_aux
+      #170
+      _formal
+        s
+        String
+      Int
+      #171
+      _let
+        int
+        Int
+        #171
+        _int
+          0
+        : Int
+        #172
+        _block
+          #173
+          _let
+            j
+            Int
+            #173
+            _dispatch
+              #173
+              _object
+                s
+              : String
+              length
+              (
+              )
+            : Int
+            #174
+            _let
+              i
+              Int
+              #174
+              _int
+                0
+              : Int
+              #175
+              _loop
+                #175
+                _lt
+                  #175
+                  _object
+                    i
+                  : Int
+                  #175
+                  _object
+                    j
+                  : Int
+                : Bool
+                #176
+                _block
+                  #177
+                  _assign
+                    int
+                    #177
+                    _plus
+                      #177
+                      _mul
+                        #177
+                        _object
+                          int
+                        : Int
+                        #177
+                        _int
+                          10
+                        : Int
+                      : Int
+                      #177
+                      _dispatch
+                        #177
+                        _object
+                          self
+                        : SELF_TYPE
+                        c2i
+                        (
+                        #177
+                        _dispatch
+                          #177
+                          _object
+                            s
+                          : String
+                          substr
+                          (
+                          #177
+                          _object
+                            i
+                          : Int
+                          #177
+                          _int
+                            1
+                          : Int
+                          )
+                        : String
+                        )
+                      : Int
+                    : Int
+                  : Int
+                  #178
+                  _assign
+                    i
+                    #178
+                    _plus
+                      #178
+                      _object
+                        i
+                      : Int
+                      #178
+                      _int
+                        1
+                      : Int
+                    : Int
+                  : Int
+                : Int
+              : Object
+            : Object
+          : Object
+          #183
+          _object
+            int
+          : Int
+        : Int
+      : Int
+    #192
+    _method
+      i2a
+      #192
+      _formal
+        i
+        Int
+      String
+      #193
+      _cond
+        #193
+        _eq
+          #193
+          _object
+            i
+          : Int
+          #193
+          _int
+            0
+          : Int
+        : Bool
+        #193
+        _string
+          "0"
+        : String
+        #194
+        _cond
+          #194
+          _lt
+            #194
+            _int
+              0
+            : Int
+            #194
+            _object
+              i
+            : Int
+          : Bool
+          #194
+          _dispatch
+            #194
+            _object
+              self
+            : SELF_TYPE
+            i2a_aux
+            (
+            #194
+            _object
+              i
+            : Int
+            )
+          : String
+          #195
+          _dispatch
+            #195
+            _string
+              "-"
+            : String
+            concat
+            (
+            #195
+            _dispatch
+              #195
+              _object
+                self
+              : SELF_TYPE
+              i2a_aux
+              (
+              #195
+              _mul
+                #195
+                _object
+                  i
+                : Int
+                #195
+                _neg
+                  #195
+                  _int
+                    1
+                  : Int
+                : Int
+              : Int
+              )
+            : String
+            )
+          : String
+        : String
+      : String
+    #202
+    _method
+      i2a_aux
+      #202
+      _formal
+        i
+        Int
+      String
+      #203
+      _cond
+        #203
+        _eq
+          #203
+          _object
+            i
+          : Int
+          #203
+          _int
+            0
+          : Int
+        : Bool
+        #203
+        _string
+          ""
+        : String
+        #204
+        _let
+          next
+          Int
+          #204
+          _divide
+            #204
+            _object
+              i
+            : Int
+            #204
+            _int
+              10
+            : Int
+          : Int
+          #205
+          _dispatch
+            #205
+            _dispatch
+              #205
+              _object
+                self
+              : SELF_TYPE
+              i2a_aux
+              (
+              #205
+              _object
+                next
+              : Int
+              )
+            : String
+            concat
+            (
+            #205
+            _dispatch
+              #205
+              _object
+                self
+              : SELF_TYPE
+              i2c
+              (
+              #205
+              _sub
+                #205
+                _object
+                  i
+                : Int
+                #205
+                _mul
+                  #205
+                  _object
+                    next
+                  : Int
+                  #205
+                  _int
+                    10
+                  : Int
+                : Int
+              : Int
+              )
+            : String
+            )
+          : String
+        : String
+      : String
+    )
+  #6
+  _class
+    Node
+    Object
+    "list.cl"
+    (
+    #7
+    _attr
+      next
+      Node
+      #0
+      _no_expr
+      : _no_type
+    #8
+    _attr
+      val
+      Object
+      #0
+      _no_expr
+      : _no_type
+    #9
+    _method
+      node_init
+      #9
+      _formal
+        v
+        Object
+      Node
+      #10
+      _cond
+        #10
+        _isvoid
+          #10
+          _object
+            v
+          : Object
+        : Bool
+        #10
+        _block
+          #10
+          _dispatch
+            #10
+            _new
+              Throw
+            : Throw
+            error
+            (
+            #10
+            _string
+              "initial value is NULL, init Err."
+            : String
+            )
+          : Object
+          #10
+          _object
+            self
+          : SELF_TYPE
+        : SELF_TYPE
+        #10
+        _block
+          #11
+          _assign
+            val
+            #11
+            _object
+              v
+            : Object
+          : Object
+          #12
+          _object
+            self
+          : SELF_TYPE
+        : SELF_TYPE
+      : SELF_TYPE
+    #15
+    _method
+      link
+      #15
+      _formal
+        n
+        Node
+      Object
+      #16
+      _assign
+        next
+        #16
+        _object
+          n
+        : Node
+      : Node
+    #18
+    _method
+      assign
+      #18
+      _formal
+        v
+        Object
+      Object
+      #19
+      _cond
+        #19
+        _isvoid
+          #19
+          _object
+            v
+          : Object
+        : Bool
+        #19
+        _dispatch
+          #19
+          _new
+            Throw
+          : Throw
+          warning
+          (
+          #19
+          _string
+            "value is NULL in assign."
+          : String
+          )
+        : Object
+        #20
+        _assign
+          val
+          #20
+          _object
+            v
+          : Object
+        : Object
+      : Object
+    #23
+    _method
+      next
+      Node
+      #24
+      _object
+        next
+      : Node
+    #26
+    _method
+      val
+      Object
+      #27
+      _object
+        val
+      : Object
+    #29
+    _method
+      linkBefore
+      #29
+      _formal
+        v
+        Object
+      Node
+      #30
+      _block
+        #32
+        _let
+          n
+          Node
+          #32
+          _new
+            Node
+          : Node
+          #32
+          _block
+            #33
+            _dispatch
+              #33
+              _object
+                n
+              : Node
+              link
+              (
+              #33
+              _object
+                self
+              : SELF_TYPE
+              )
+            : Object
+            #34
+            _cond
+              #34
+              _isvoid
+                #34
+                _object
+                  v
+                : Object
+              : Bool
+              #34
+              _block
+                #34
+                _dispatch
+                  #34
+                  _new
+                    Throw
+                  : Throw
+                  warning
+                  (
+                  #34
+                  _string
+                    "value is NULL in linkBefore."
+                  : String
+                  )
+                : Object
+                #34
+                _object
+                  n
+                : Node
+              : Node
+              #34
+              _block
+                #35
+                _dispatch
+                  #35
+                  _object
+                    n
+                  : Node
+                  assign
+                  (
+                  #35
+                  _object
+                    v
+                  : Object
+                  )
+                : Object
+                #36
+                _object
+                  n
+                : Node
+              : Node
+            : Node
+          : Node
+        : Node
+      : Node
+    #42
+    _method
+      linkBehind
+      #42
+      _formal
+        v
+        Object
+      Node
+      #43
+      _block
+        #44
+        _let
+          n
+          Node
+          #44
+          _new
+            Node
+          : Node
+          #44
+          _block
+            #45
+            _assign
+              next
+              #45
+              _object
+                n
+              : Node
+            : Node
+            #46
+            _cond
+              #46
+              _isvoid
+                #46
+                _object
+                  v
+                : Object
+              : Bool
+              #46
+              _block
+                #46
+                _dispatch
+                  #46
+                  _new
+                    Throw
+                  : Throw
+                  warning
+                  (
+                  #46
+                  _string
+                    "value is NULL in linkBehind."
+                  : String
+                  )
+                : Object
+                #46
+                _object
+                  n
+                : Node
+              : Node
+              #46
+              _block
+                #47
+                _dispatch
+                  #47
+                  _object
+                    n
+                  : Node
+                  assign
+                  (
+                  #47
+                  _object
+                    v
+                  : Object
+                  )
+                : Object
+                #48
+                _object
+                  n
+                : Node
+              : Node
+            : Node
+          : Node
+        : Node
+      : Node
+    #53
+    _method
+      linkBeforeN
+      #53
+      _formal
+        n
+        Node
+      Node
+      #54
+      _block
+        #55
+        _cond
+          #55
+          _isvoid
+            #55
+            _object
+              n
+            : Node
+          : Bool
+          #55
+          _block
+            #55
+            _dispatch
+              #55
+              _new
+                Throw
+              : Throw
+              warning
+              (
+              #55
+              _string
+                "Node is NULL in linkBeforeN."
+              : String
+              )
+            : Object
+            #55
+            _object
+              self
+            : SELF_TYPE
+          : SELF_TYPE
+          #55
+          _block
+            #57
+            _dispatch
+              #57
+              _object
+                n
+              : Node
+              link
+              (
+              #57
+              _object
+                self
+              : SELF_TYPE
+              )
+            : Object
+            #58
+            _object
+              n
+            : Node
+          : Node
+        : Node
+      : Node
+    #62
+    _method
+      linkBehindN
+      #62
+      _formal
+        n
+        Node
+      Node
+      #63
+      _block
+        #64
+        _cond
+          #64
+          _isvoid
+            #64
+            _object
+              n
+            : Node
+          : Bool
+          #64
+          _block
+            #64
+            _dispatch
+              #64
+              _new
+                Throw
+              : Throw
+              warning
+              (
+              #64
+              _string
+                "Node is NULL in linkBehindN."
+              : String
+              )
+            : Object
+            #64
+            _object
+              self
+            : SELF_TYPE
+          : SELF_TYPE
+          #64
+          _block
+            #66
+            _assign
+              next
+              #66
+              _object
+                n
+              : Node
+            : Node
+            #67
+            _object
+              n
+            : Node
+          : Node
+        : Node
+      : Node
+    #71
+    _method
+      deleteBehind
+      Node
+      #72
+      _block
+        #73
+        _cond
+          #73
+          _isvoid
+            #73
+            _object
+              next
+            : Node
+          : Bool
+          #73
+          _block
+            #73
+            _dispatch
+              #73
+              _new
+                Throw
+              : Throw
+              warning
+              (
+              #73
+              _string
+                "Behind node is NULL, deleteBehind failed."
+              : String
+              )
+            : Object
+            #73
+            _object
+              self
+            : SELF_TYPE
+          : SELF_TYPE
+          #73
+          _block
+            #74
+            _assign
+              next
+              #74
+              _dispatch
+                #74
+                _object
+                  next
+                : Node
+                next
+                (
+                )
+              : Node
+            : Node
+            #75
+            _object
+              self
+            : SELF_TYPE
+          : SELF_TYPE
+        : SELF_TYPE
+      : SELF_TYPE
+    #79
+    _method
+      print
+      Object
+      #80
+      _typcase
+        #80
+        _object
+          val
+        : Object
+        #81
+        _branch
+          s
+          String
+          #81
+          _dispatch
+            #81
+            _dispatch
+              #81
+              _new
+                IO
+              : IO
+              out_string
+              (
+              #81
+              _object
+                s
+              : String
+              )
+            : IO
+            out_string
+            (
+            #81
+            _string
+              " -> "
+            : String
+            )
+          : IO
+        #82
+        _branch
+          i
+          Int
+          #82
+          _dispatch
+            #82
+            _dispatch
+              #82
+              _new
+                IO
+              : IO
+              out_string
+              (
+              #82
+              _dispatch
+                #82
+                _new
+                  A2I
+                : A2I
+                i2a
+                (
+                #82
+                _object
+                  i
+                : Int
+                )
+              : String
+              )
+            : IO
+            out_string
+            (
+            #82
+            _string
+              " -> "
+            : String
+            )
+          : IO
+        #83
+        _branch
+          b
+          Bool
+          #83
+          _dispatch
+            #83
+            _dispatch
+              #83
+              _new
+                IO
+              : IO
+              out_string
+              (
+              #83
+              _dispatch
+                #83
+                _new
+                  Mylib
+                : Mylib
+                b2a
+                (
+                #83
+                _object
+                  b
+                : Bool
+                )
+              : String
+              )
+            : IO
+            out_string
+            (
+            #83
+            _string
+              " -> "
+            : String
+            )
+          : IO
+        #84
+        _branch
+          o
+          Object
+          #84
+          _dispatch
+            #84
+            _new
+              IO
+            : IO
+            out_string
+            (
+            #84
+            _string
+              "/ -> "
+            : String
+            )
+          : IO
+      : IO
+    )
+  #91
+  _class
+    List
+    Node
+    "list.cl"
+    (
+    #92
+    _attr
+      length
+      Int
+      #92
+      _int
+        0
+      : Int
+    #93
+    _attr
+      name
+      String
+      #0
+      _no_expr
+      : _no_type
+    #94
+    _method
+      list_init
+      #94
+      _formal
+        nam
+        String
+      List
+      #95
+      _block
+        #96
+        _assign
+          name
+          #96
+          _object
+            nam
+          : String
+        : String
+        #97
+        _assign
+          val
+          #97
+          _string
+            "Head Node"
+          : String
+        : String
+        #98
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #101
+    _method
+      insertIdx
+      #101
+      _formal
+        item
+        Object
+      #101
+      _formal
+        index
+        Int
+      Bool
+      #102
+      _block
+        #103
+        _cond
+          #103
+          _dispatch
+            #103
+            _new
+              Op
+            : Op
+            or
+            (
+            #103
+            _comp
+              #103
+              _leq
+                #103
+                _object
+                  index
+                : Int
+                #103
+                _object
+                  length
+                : Int
+              : Bool
+            : Bool
+            #103
+            _lt
+              #103
+              _object
+                index
+              : Int
+              #103
+              _int
+                0
+              : Int
+            : Bool
+            )
+          : Bool
+          #103
+          _block
+            #103
+            _dispatch
+              #103
+              _new
+                Throw
+              : Throw
+              warning
+              (
+              #103
+              _string
+                "Wrong index, insert failed."
+              : String
+              )
+            : Object
+            #103
+            _bool
+              0
+            : Bool
+          : Bool
+          #103
+          _block
+            #104
+            _let
+              n
+              Node
+              #104
+              _object
+                self
+              : SELF_TYPE
+              #104
+              _let
+                curIdx
+                Int
+                #104
+                _int
+                  0
+                : Int
+                #105
+                _block
+                  #106
+                  _loop
+                    #106
+                    _comp
+                      #106
+                      _eq
+                        #106
+                        _object
+                          curIdx
+                        : Int
+                        #106
+                        _object
+                          index
+                        : Int
+                      : Bool
+                    : Bool
+                    #106
+                    _block
+                      #107
+                      _assign
+                        curIdx
+                        #107
+                        _plus
+                          #107
+                          _object
+                            curIdx
+                          : Int
+                          #107
+                          _int
+                            1
+                          : Int
+                        : Int
+                      : Int
+                      #108
+                      _assign
+                        n
+                        #108
+                        _dispatch
+                          #108
+                          _object
+                            n
+                          : Node
+                          next
+                          (
+                          )
+                        : Node
+                      : Node
+                    : Node
+                  : Object
+                  #110
+                  _let
+                    nnext
+                    Node
+                    #110
+                    _dispatch
+                      #110
+                      _object
+                        n
+                      : Node
+                      next
+                      (
+                      )
+                    : Node
+                    #111
+                    _dispatch
+                      #111
+                      _dispatch
+                        #111
+                        _object
+                          n
+                        : Node
+                        linkBehind
+                        (
+                        #111
+                        _object
+                          item
+                        : Object
+                        )
+                      : Node
+                      link
+                      (
+                      #111
+                      _object
+                        nnext
+                      : Node
+                      )
+                    : Object
+                  : Object
+                  #113
+                  _assign
+                    length
+                    #113
+                    _plus
+                      #113
+                      _object
+                        length
+                      : Int
+                      #113
+                      _int
+                        1
+                      : Int
+                    : Int
+                  : Int
+                  #114
+                  _bool
+                    1
+                  : Bool
+                : Bool
+              : Bool
+            : Bool
+          : Bool
+        : Bool
+      : Bool
+    #120
+    _method
+      insertIdxN
+      #120
+      _formal
+        item
+        Node
+      #120
+      _formal
+        index
+        Int
+      Bool
+      #121
+      _block
+        #122
+        _cond
+          #122
+          _dispatch
+            #122
+            _new
+              Op
+            : Op
+            or
+            (
+            #122
+            _comp
+              #122
+              _leq
+                #122
+                _object
+                  index
+                : Int
+                #122
+                _object
+                  length
+                : Int
+              : Bool
+            : Bool
+            #122
+            _lt
+              #122
+              _object
+                index
+              : Int
+              #122
+              _int
+                0
+              : Int
+            : Bool
+            )
+          : Bool
+          #122
+          _block
+            #122
+            _dispatch
+              #122
+              _new
+                Throw
+              : Throw
+              warning
+              (
+              #122
+              _string
+                "Wrong index, insert failed."
+              : String
+              )
+            : Object
+            #122
+            _bool
+              0
+            : Bool
+          : Bool
+          #122
+          _block
+            #123
+            _let
+              n
+              Node
+              #123
+              _object
+                self
+              : SELF_TYPE
+              #123
+              _let
+                curIdx
+                Int
+                #123
+                _int
+                  0
+                : Int
+                #124
+                _block
+                  #125
+                  _loop
+                    #125
+                    _comp
+                      #125
+                      _eq
+                        #125
+                        _object
+                          curIdx
+                        : Int
+                        #125
+                        _object
+                          index
+                        : Int
+                      : Bool
+                    : Bool
+                    #125
+                    _block
+                      #126
+                      _assign
+                        curIdx
+                        #126
+                        _plus
+                          #126
+                          _object
+                            curIdx
+                          : Int
+                          #126
+                          _int
+                            1
+                          : Int
+                        : Int
+                      : Int
+                      #127
+                      _assign
+                        n
+                        #127
+                        _dispatch
+                          #127
+                          _object
+                            n
+                          : Node
+                          next
+                          (
+                          )
+                        : Node
+                      : Node
+                    : Node
+                  : Object
+                  #129
+                  _let
+                    nnext
+                    Node
+                    #129
+                    _dispatch
+                      #129
+                      _object
+                        n
+                      : Node
+                      next
+                      (
+                      )
+                    : Node
+                    #130
+                    _dispatch
+                      #130
+                      _dispatch
+                        #130
+                        _object
+                          n
+                        : Node
+                        linkBehindN
+                        (
+                        #130
+                        _object
+                          item
+                        : Node
+                        )
+                      : Node
+                      link
+                      (
+                      #130
+                      _object
+                        nnext
+                      : Node
+                      )
+                    : Object
+                  : Object
+                  #132
+                  _assign
+                    length
+                    #132
+                    _plus
+                      #132
+                      _object
+                        length
+                      : Int
+                      #132
+                      _int
+                        1
+                      : Int
+                    : Int
+                  : Int
+                  #133
+                  _bool
+                    1
+                  : Bool
+                : Bool
+              : Bool
+            : Bool
+          : Bool
+        : Bool
+      : Bool
+    #139
+    _method
+      deleteIdx
+      #139
+      _formal
+        index
+        Int
+      Bool
+      #140
+      _block
+        #141
+        _cond
+          #141
+          _comp
+            #141
+            _leq
+              #141
+              _object
+                index
+              : Int
+              #141
+              _object
+                length
+              : Int
+            : Bool
+          : Bool
+          #141
+          _block
+            #141
+            _dispatch
+              #141
+              _new
+                Throw
+              : Throw
+              warning
+              (
+              #141
+              _string
+                "Wrong index, delete failed."
+              : String
+              )
+            : Object
+            #141
+            _bool
+              0
+            : Bool
+          : Bool
+          #141
+          _block
+            #142
+            _let
+              n
+              Node
+              #142
+              _object
+                self
+              : SELF_TYPE
+              #142
+              _let
+                curIdx
+                Int
+                #142
+                _int
+                  0
+                : Int
+                #143
+                _block
+                  #144
+                  _loop
+                    #144
+                    _comp
+                      #144
+                      _eq
+                        #144
+                        _object
+                          curIdx
+                        : Int
+                        #144
+                        _object
+                          index
+                        : Int
+                      : Bool
+                    : Bool
+                    #144
+                    _block
+                      #145
+                      _assign
+                        curIdx
+                        #145
+                        _plus
+                          #145
+                          _object
+                            curIdx
+                          : Int
+                          #145
+                          _int
+                            1
+                          : Int
+                        : Int
+                      : Int
+                      #146
+                      _assign
+                        n
+                        #146
+                        _dispatch
+                          #146
+                          _object
+                            n
+                          : Node
+                          next
+                          (
+                          )
+                        : Node
+                      : Node
+                    : Node
+                  : Object
+                  #148
+                  _assign
+                    length
+                    #148
+                    _sub
+                      #148
+                      _object
+                        length
+                      : Int
+                      #148
+                      _int
+                        1
+                      : Int
+                    : Int
+                  : Int
+                  #149
+                  _dispatch
+                    #149
+                    _object
+                      n
+                    : Node
+                    deleteBehind
+                    (
+                    )
+                  : Node
+                : Node
+              : Node
+            : Node
+          : Node
+        : Object
+        #153
+        _bool
+          1
+        : Bool
+      : Bool
+    #156
+    _method
+      insert
+      #156
+      _formal
+        item
+        Object
+      Bool
+      #157
+      _dispatch
+        #157
+        _object
+          self
+        : SELF_TYPE
+        insertIdx
+        (
+        #157
+        _object
+          item
+        : Object
+        #157
+        _int
+          0
+        : Int
+        )
+      : Bool
+    #159
+    _method
+      delete
+      #159
+      _formal
+        item
+        Object
+      Bool
+      #160
+      _block
+        #162
+        _let
+          n
+          Node
+          #162
+          _object
+            self
+          : SELF_TYPE
+          #162
+          _let
+            suc
+            Bool
+            #162
+            _bool
+              0
+            : Bool
+            #162
+            _block
+              #163
+              _loop
+                #163
+                _dispatch
+                  #163
+                  _new
+                    Op
+                  : Op
+                  and
+                  (
+                  #163
+                  _comp
+                    #163
+                    _isvoid
+                      #163
+                      _dispatch
+                        #163
+                        _object
+                          n
+                        : Node
+                        next
+                        (
+                        )
+                      : Node
+                    : Bool
+                  : Bool
+                  #163
+                  _comp
+                    #163
+                    _object
+                      suc
+                    : Bool
+                  : Bool
+                  )
+                : Bool
+                #163
+                _block
+                  #164
+                  _cond
+                    #164
+                    _eq
+                      #164
+                      _dispatch
+                        #164
+                        _dispatch
+                          #164
+                          _object
+                            n
+                          : Node
+                          next
+                          (
+                          )
+                        : Node
+                        val
+                        (
+                        )
+                      : Object
+                      #164
+                      _object
+                        item
+                      : Object
+                    : Bool
+                    #164
+                    _block
+                      #164
+                      _dispatch
+                        #164
+                        _object
+                          n
+                        : Node
+                        link
+                        (
+                        #164
+                        _dispatch
+                          #164
+                          _dispatch
+                            #164
+                            _object
+                              n
+                            : Node
+                            next
+                            (
+                            )
+                          : Node
+                          next
+                          (
+                          )
+                        : Node
+                        )
+                      : Object
+                      #164
+                      _assign
+                        length
+                        #164
+                        _sub
+                          #164
+                          _object
+                            length
+                          : Int
+                          #164
+                          _int
+                            1
+                          : Int
+                        : Int
+                      : Int
+                      #164
+                      _assign
+                        suc
+                        #164
+                        _bool
+                          1
+                        : Bool
+                      : Bool
+                    : Bool
+                    #164
+                    _assign
+                      n
+                      #164
+                      _dispatch
+                        #164
+                        _object
+                          n
+                        : Node
+                        next
+                        (
+                        )
+                      : Node
+                    : Node
+                  : Object
+                : Object
+              : Object
+              #166
+              _cond
+                #166
+                _comp
+                  #166
+                  _object
+                    suc
+                  : Bool
+                : Bool
+                #166
+                _block
+                  #166
+                  _dispatch
+                    #166
+                    _new
+                      Throw
+                    : Throw
+                    warning
+                    (
+                    #166
+                    _dispatch
+                      #166
+                      _dispatch
+                        #166
+                        _string
+                          "Item "
+                        : String
+                        concat
+                        (
+                        #166
+                        _dispatch
+                          #166
+                          _new
+                            Mylib
+                          : Mylib
+                          item2a
+                          (
+                          #166
+                          _object
+                            item
+                          : Object
+                          )
+                        : String
+                        )
+                      : String
+                      concat
+                      (
+                      #166
+                      _string
+                        " not found, delete failed."
+                      : String
+                      )
+                    : String
+                    )
+                  : Object
+                  #166
+                  _bool
+                    0
+                  : Bool
+                : Bool
+                #166
+                _bool
+                  1
+                : Bool
+              : Bool
+            : Bool
+          : Bool
+        : Bool
+      : Bool
+    #171
+    _method
+      search
+      #171
+      _formal
+        item
+        Object
+      Bool
+      #172
+      _block
+        #174
+        _let
+          n
+          Node
+          #174
+          _object
+            self
+          : SELF_TYPE
+          #174
+          _let
+            suc
+            Bool
+            #174
+            _bool
+              0
+            : Bool
+            #174
+            _block
+              #175
+              _loop
+                #175
+                _dispatch
+                  #175
+                  _new
+                    Op
+                  : Op
+                  and
+                  (
+                  #175
+                  _comp
+                    #175
+                    _isvoid
+                      #175
+                      _dispatch
+                        #175
+                        _object
+                          n
+                        : Node
+                        next
+                        (
+                        )
+                      : Node
+                    : Bool
+                  : Bool
+                  #175
+                  _comp
+                    #175
+                    _object
+                      suc
+                    : Bool
+                  : Bool
+                  )
+                : Bool
+                #175
+                _block
+                  #176
+                  _cond
+                    #176
+                    _eq
+                      #176
+                      _dispatch
+                        #176
+                        _dispatch
+                          #176
+                          _object
+                            n
+                          : Node
+                          next
+                          (
+                          )
+                        : Node
+                        val
+                        (
+                        )
+                      : Object
+                      #176
+                      _object
+                        item
+                      : Object
+                    : Bool
+                    #176
+                    _assign
+                      suc
+                      #176
+                      _bool
+                        1
+                      : Bool
+                    : Bool
+                    #176
+                    _assign
+                      n
+                      #176
+                      _dispatch
+                        #176
+                        _object
+                          n
+                        : Node
+                        next
+                        (
+                        )
+                      : Node
+                    : Node
+                  : Object
+                : Object
+              : Object
+              #178
+              _cond
+                #178
+                _comp
+                  #178
+                  _object
+                    suc
+                  : Bool
+                : Bool
+                #178
+                _block
+                  #178
+                  _dispatch
+                    #178
+                    _new
+                      Throw
+                    : Throw
+                    warning
+                    (
+                    #178
+                    _dispatch
+                      #178
+                      _dispatch
+                        #178
+                        _string
+                          "Item "
+                        : String
+                        concat
+                        (
+                        #178
+                        _dispatch
+                          #178
+                          _new
+                            Mylib
+                          : Mylib
+                          item2a
+                          (
+                          #178
+                          _object
+                            item
+                          : Object
+                          )
+                        : String
+                        )
+                      : String
+                      concat
+                      (
+                      #178
+                      _string
+                        " not found, search failed."
+                      : String
+                      )
+                    : String
+                    )
+                  : Object
+                  #178
+                  _bool
+                    0
+                  : Bool
+                : Bool
+                #178
+                _bool
+                  1
+                : Bool
+              : Bool
+            : Bool
+          : Bool
+        : Bool
+      : Bool
+    #183
+    _method
+      isEmpty
+      Bool
+      #184
+      _eq
+        #184
+        _object
+          length
+        : Int
+        #184
+        _int
+          0
+        : Int
+      : Bool
+    #186
+    _method
+      length
+      Int
+      #187
+      _object
+        length
+      : Int
+    #189
+    _method
+      valx
+      #189
+      _formal
+        index
+        Int
+      Object
+      #190
+      _block
+        #191
+        _cond
+          #191
+          _dispatch
+            #191
+            _new
+              Op
+            : Op
+            or
+            (
+            #191
+            _comp
+              #191
+              _leq
+                #191
+                _object
+                  index
+                : Int
+                #191
+                _object
+                  length
+                : Int
+              : Bool
+            : Bool
+            #191
+            _lt
+              #191
+              _object
+                index
+              : Int
+              #191
+              _int
+                0
+              : Int
+            : Bool
+            )
+          : Bool
+          #191
+          _block
+            #191
+            _dispatch
+              #191
+              _new
+                Throw
+              : Throw
+              warning
+              (
+              #191
+              _string
+                "Wrong index, valx access failed."
+              : String
+              )
+            : Object
+            #191
+            _new
+              Object
+            : Object
+          : Object
+          #191
+          _block
+            #192
+            _let
+              n
+              Node
+              #192
+              _object
+                self
+              : SELF_TYPE
+              #192
+              _let
+                curIdx
+                Int
+                #192
+                _int
+                  0
+                : Int
+                #193
+                _block
+                  #194
+                  _loop
+                    #194
+                    _comp
+                      #194
+                      _eq
+                        #194
+                        _object
+                          curIdx
+                        : Int
+                        #194
+                        _object
+                          index
+                        : Int
+                      : Bool
+                    : Bool
+                    #194
+                    _block
+                      #195
+                      _assign
+                        curIdx
+                        #195
+                        _plus
+                          #195
+                          _object
+                            curIdx
+                          : Int
+                          #195
+                          _int
+                            1
+                          : Int
+                        : Int
+                      : Int
+                      #196
+                      _assign
+                        n
+                        #196
+                        _dispatch
+                          #196
+                          _object
+                            n
+                          : Node
+                          next
+                          (
+                          )
+                        : Node
+                      : Node
+                    : Node
+                  : Object
+                  #198
+                  _dispatch
+                    #198
+                    _object
+                      n
+                    : Node
+                    val
+                    (
+                    )
+                  : Object
+                : Object
+              : Object
+            : Object
+          : Object
+        : Object
+      : Object
+    #204
+    _method
+      nodex
+      #204
+      _formal
+        index
+        Int
+      Node
+      #205
+      _block
+        #206
+        _cond
+          #206
+          _dispatch
+            #206
+            _new
+              Op
+            : Op
+            or
+            (
+            #206
+            _comp
+              #206
+              _leq
+                #206
+                _object
+                  index
+                : Int
+                #206
+                _sub
+                  #206
+                  _object
+                    length
+                  : Int
+                  #206
+                  _int
+                    1
+                  : Int
+                : Int
+              : Bool
+            : Bool
+            #206
+            _lt
+              #206
+              _object
+                index
+              : Int
+              #206
+              _neg
+                #206
+                _int
+                  1
+                : Int
+              : Int
+            : Bool
+            )
+          : Bool
+          #206
+          _block
+            #206
+            _dispatch
+              #206
+              _new
+                Throw
+              : Throw
+              warning
+              (
+              #206
+              _string
+                "Wrong index, nodex access failed."
+              : String
+              )
+            : Object
+            #206
+            _object
+              self
+            : SELF_TYPE
+          : SELF_TYPE
+          #206
+          _block
+            #207
+            _let
+              n
+              Node
+              #207
+              _object
+                self
+              : SELF_TYPE
+              #207
+              _let
+                curIdx
+                Int
+                #207
+                _neg
+                  #207
+                  _int
+                    1
+                  : Int
+                : Int
+                #208
+                _block
+                  #209
+                  _loop
+                    #209
+                    _comp
+                      #209
+                      _eq
+                        #209
+                        _object
+                          curIdx
+                        : Int
+                        #209
+                        _object
+                          index
+                        : Int
+                      : Bool
+                    : Bool
+                    #209
+                    _block
+                      #210
+                      _assign
+                        curIdx
+                        #210
+                        _plus
+                          #210
+                          _object
+                            curIdx
+                          : Int
+                          #210
+                          _int
+                            1
+                          : Int
+                        : Int
+                      : Int
+                      #211
+                      _assign
+                        n
+                        #211
+                        _dispatch
+                          #211
+                          _object
+                            n
+                          : Node
+                          next
+                          (
+                          )
+                        : Node
+                      : Node
+                    : Node
+                  : Object
+                  #213
+                  _object
+                    n
+                  : Node
+                : Node
+              : Node
+            : Node
+          : Node
+        : Node
+      : Node
+    #219
+    _method
+      print
+      Object
+      #220
+      _block
+        #221
+        _dispatch
+          #221
+          _dispatch
+            #221
+            _new
+              IO
+            : IO
+            out_string
+            (
+            #221
+            _object
+              name
+            : String
+            )
+          : IO
+          out_string
+          (
+          #221
+          _string
+            " => "
+          : String
+          )
+        : IO
+        #223
+        _let
+          n
+          Node
+          #223
+          _object
+            self
+          : SELF_TYPE
+          #223
+          _block
+            #224
+            _loop
+              #224
+              _comp
+                #224
+                _isvoid
+                  #224
+                  _dispatch
+                    #224
+                    _object
+                      n
+                    : Node
+                    next
+                    (
+                    )
+                  : Node
+                : Bool
+              : Bool
+              #224
+              _block
+                #225
+                _assign
+                  n
+                  #225
+                  _dispatch
+                    #225
+                    _object
+                      n
+                    : Node
+                    next
+                    (
+                    )
+                  : Node
+                : Node
+                #226
+                _dispatch
+                  #226
+                  _object
+                    n
+                  : Node
+                  print
+                  (
+                  )
+                : Object
+              : Object
+            : Object
+            #228
+            _dispatch
+              #228
+              _new
+                IO
+              : IO
+              out_string
+              (
+              #228
+              _string
+                "End of list.\n"
+              : String
+              )
+            : IO
+          : IO
+        : IO
+      : IO
+    )

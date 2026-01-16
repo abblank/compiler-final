@@ -1,0 +1,4 @@
+data-structures.cl:86: Class BSTNode inherits from an undefined class Node.
+data-structures.cl:48: Class Queue inherits from an undefined class List.
+data-structures.cl:8: Class Stack inherits from an undefined class List.
+Compilation halted due to static semantic errors.

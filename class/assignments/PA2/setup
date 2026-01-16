@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ln -sf /usr/class/bin/parser .
+ln -sf /usr/class/bin/semant .
+ln -sf /usr/class/bin/cgen .
+ls -la parser semant cgen

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+make clean ; make $1 ; ./setup ; ./mycoolc main.cl base.cl list.cl data-structures.cl ; spim main.s
+

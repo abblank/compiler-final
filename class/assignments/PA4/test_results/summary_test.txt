@@ -1,0 +1,5 @@
+测试文件: test.cl
+测试结果: 失败
+我的语义分析器退出码: 1
+官方语义分析器退出码: 1
+输出文件: mysemant_test.out, auth_semant_test.out

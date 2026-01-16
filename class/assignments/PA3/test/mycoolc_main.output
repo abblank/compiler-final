@@ -1,0 +1,163 @@
+main.cl:2: Class List of attribute list1 is undefined.
+main.cl:2: 'new' used with undefined class List.
+main.cl:2: Dispatch to undefined method list_init.
+main.cl:3: Class List of attribute list2 is undefined.
+main.cl:3: 'new' used with undefined class List.
+main.cl:3: Dispatch to undefined method list_init.
+main.cl:4: Class List of attribute list3 is undefined.
+main.cl:4: 'new' used with undefined class List.
+main.cl:4: Dispatch to undefined method list_init.
+main.cl:5: Class Stack of attribute stack1 is undefined.
+main.cl:5: 'new' used with undefined class Stack.
+main.cl:5: Dispatch to undefined method stack_init.
+main.cl:6: Class Queue of attribute queue1 is undefined.
+main.cl:6: 'new' used with undefined class Queue.
+main.cl:6: Dispatch to undefined method queue_init.
+main.cl:7: Class BST of attribute bst1 is undefined.
+main.cl:7: 'new' used with undefined class BST.
+main.cl:7: Dispatch to undefined method bst_init.
+main.cl:8: Class HashTable of attribute ht1 is undefined.
+main.cl:8: 'new' used with undefined class HashTable.
+main.cl:8: Dispatch to undefined method ht_init.
+main.cl:10: Class Mylib of attribute dbg is undefined.
+main.cl:10: 'new' used with undefined class Mylib.
+main.cl:15: Dispatch on undefined class List.
+main.cl:16: Dispatch on undefined class List.
+main.cl:17: Dispatch on undefined class List.
+main.cl:18: Dispatch on undefined class List.
+main.cl:20: Dispatch on undefined class List.
+main.cl:20: Dispatch to undefined method linkBehind.
+main.cl:20: Dispatch to undefined method linkBehind.
+main.cl:20: Dispatch to undefined method linkBehind.
+main.cl:22: 'new' used with undefined class Node.
+main.cl:22: Dispatch to undefined method node_init.
+main.cl:22: Dispatch to undefined method linkBefore.
+main.cl:22: Dispatch to undefined method linkBefore.
+main.cl:22: Dispatch to undefined method linkBefore.
+main.cl:22: Dispatch on undefined class List.
+main.cl:24: Dispatch on undefined class List.
+main.cl:25: Dispatch on undefined class List.
+main.cl:26: Dispatch on undefined class List.
+main.cl:28: Dispatch on undefined class List.
+main.cl:29: Dispatch on undefined class List.
+main.cl:30: Dispatch on undefined class List.
+main.cl:32: Dispatch on undefined class List.
+main.cl:32: Dispatch on undefined class List.
+main.cl:33: Dispatch on undefined class List.
+main.cl:33: Dispatch on undefined class List.
+main.cl:34: Dispatch on undefined class List.
+main.cl:34: Dispatch on undefined class List.
+main.cl:35: Dispatch on undefined class List.
+main.cl:37: Dispatch on undefined class List.
+main.cl:37: Dispatch on undefined class Mylib.
+main.cl:38: Dispatch on undefined class List.
+main.cl:38: Dispatch on undefined class Mylib.
+main.cl:40: Dispatch on undefined class List.
+main.cl:40: non-Int arguments: Object - Int
+main.cl:40: Dispatch on undefined class List.
+main.cl:41: Dispatch on undefined class List.
+main.cl:42: Dispatch on undefined class List.
+main.cl:43: Dispatch on undefined class List.
+main.cl:47: Dispatch on undefined class List.
+main.cl:47: Dispatch on undefined class Mylib.
+main.cl:48: Dispatch on undefined class List.
+main.cl:48: Dispatch on undefined class Mylib.
+main.cl:49: Dispatch on undefined class List.
+main.cl:49: Dispatch on undefined class List.
+main.cl:49: Dispatch on undefined class Mylib.
+main.cl:50: Dispatch on undefined class List.
+main.cl:50: Dispatch on undefined class Mylib.
+main.cl:51: Dispatch on undefined class List.
+main.cl:51: Dispatch on undefined class Mylib.
+main.cl:55: Dispatch on undefined class Stack.
+main.cl:56: Dispatch on undefined class Stack.
+main.cl:57: Dispatch on undefined class Stack.
+main.cl:58: Dispatch on undefined class Stack.
+main.cl:60: Dispatch on undefined class Stack.
+main.cl:60: Dispatch on undefined class Mylib.
+main.cl:60: Dispatch on undefined class Mylib.
+main.cl:61: Dispatch on undefined class Stack.
+main.cl:61: Dispatch on undefined class Mylib.
+main.cl:61: Dispatch on undefined class Mylib.
+main.cl:63: Dispatch on undefined class Mylib.
+main.cl:64: Dispatch on undefined class Stack.
+main.cl:64: Dispatch on undefined class Mylib.
+main.cl:65: Dispatch on undefined class Stack.
+main.cl:67: Dispatch on undefined class Stack.
+main.cl:67: Dispatch on undefined class Mylib.
+main.cl:67: Dispatch on undefined class Mylib.
+main.cl:68: Dispatch on undefined class Stack.
+main.cl:68: Dispatch on undefined class Mylib.
+main.cl:68: Dispatch on undefined class Mylib.
+main.cl:69: Dispatch on undefined class Stack.
+main.cl:69: Dispatch on undefined class Mylib.
+main.cl:69: Dispatch on undefined class Mylib.
+main.cl:70: Dispatch on undefined class Stack.
+main.cl:70: Dispatch on undefined class Mylib.
+main.cl:70: Dispatch on undefined class Mylib.
+main.cl:71: Dispatch on undefined class Stack.
+main.cl:71: Dispatch on undefined class Mylib.
+main.cl:72: Dispatch on undefined class Stack.
+main.cl:76: Dispatch on undefined class Queue.
+main.cl:77: Dispatch on undefined class Queue.
+main.cl:78: Dispatch on undefined class Queue.
+main.cl:79: Dispatch on undefined class Queue.
+main.cl:81: Dispatch on undefined class Queue.
+main.cl:81: Dispatch on undefined class Mylib.
+main.cl:81: Dispatch on undefined class Mylib.
+main.cl:82: Dispatch on undefined class Queue.
+main.cl:82: Dispatch on undefined class Mylib.
+main.cl:82: Dispatch on undefined class Mylib.
+main.cl:84: Dispatch on undefined class Mylib.
+main.cl:85: Dispatch on undefined class Queue.
+main.cl:85: Dispatch on undefined class Mylib.
+main.cl:86: Dispatch on undefined class Queue.
+main.cl:88: Dispatch on undefined class Queue.
+main.cl:88: Dispatch on undefined class Mylib.
+main.cl:88: Dispatch on undefined class Mylib.
+main.cl:89: Dispatch on undefined class Queue.
+main.cl:89: Dispatch on undefined class Mylib.
+main.cl:89: Dispatch on undefined class Mylib.
+main.cl:90: Dispatch on undefined class Queue.
+main.cl:90: Dispatch on undefined class Mylib.
+main.cl:90: Dispatch on undefined class Mylib.
+main.cl:91: Dispatch on undefined class Queue.
+main.cl:91: Dispatch on undefined class Mylib.
+main.cl:91: Dispatch on undefined class Mylib.
+main.cl:92: Dispatch on undefined class Queue.
+main.cl:92: Dispatch on undefined class Mylib.
+main.cl:93: Dispatch on undefined class Queue.
+main.cl:97: Dispatch on undefined class BST.
+main.cl:98: Dispatch on undefined class BST.
+main.cl:99: Dispatch on undefined class BST.
+main.cl:100: Dispatch on undefined class BST.
+main.cl:101: Dispatch on undefined class BST.
+main.cl:102: Dispatch on undefined class BST.
+main.cl:104: Dispatch on undefined class BST.
+main.cl:104: Dispatch on undefined class Mylib.
+main.cl:105: Dispatch on undefined class BST.
+main.cl:105: Dispatch on undefined class Mylib.
+main.cl:106: Dispatch on undefined class BST.
+main.cl:106: Dispatch on undefined class Mylib.
+main.cl:109: Dispatch on undefined class HashTable.
+main.cl:110: Dispatch on undefined class HashTable.
+main.cl:111: Dispatch on undefined class HashTable.
+main.cl:112: Dispatch on undefined class HashTable.
+main.cl:113: Dispatch on undefined class HashTable.
+main.cl:114: Dispatch on undefined class HashTable.
+main.cl:115: Dispatch on undefined class HashTable.
+main.cl:116: Dispatch on undefined class HashTable.
+main.cl:117: Dispatch on undefined class HashTable.
+main.cl:118: Dispatch on undefined class HashTable.
+main.cl:119: Dispatch on undefined class HashTable.
+main.cl:121: Dispatch on undefined class HashTable.
+main.cl:121: Dispatch on undefined class Mylib.
+main.cl:122: Dispatch on undefined class HashTable.
+main.cl:122: Dispatch on undefined class Mylib.
+main.cl:123: Dispatch on undefined class HashTable.
+main.cl:123: Dispatch on undefined class Mylib.
+main.cl:125: Dispatch on undefined class HashTable.
+main.cl:126: Dispatch on undefined class HashTable.
+main.cl:127: Dispatch on undefined class HashTable.
+main.cl:128: Dispatch on undefined class HashTable.
+Compilation halted due to static semantic errors.

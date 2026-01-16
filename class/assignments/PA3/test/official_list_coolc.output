@@ -1,0 +1,60 @@
+Class Main is not defined.
+list.cl:10: 'new' used with undefined class Throw.
+list.cl:10: Dispatch to undefined method error.
+list.cl:19: 'new' used with undefined class Throw.
+list.cl:19: Dispatch to undefined method warning.
+list.cl:34: 'new' used with undefined class Throw.
+list.cl:34: Dispatch to undefined method warning.
+list.cl:46: 'new' used with undefined class Throw.
+list.cl:46: Dispatch to undefined method warning.
+list.cl:55: 'new' used with undefined class Throw.
+list.cl:55: Dispatch to undefined method warning.
+list.cl:64: 'new' used with undefined class Throw.
+list.cl:64: Dispatch to undefined method warning.
+list.cl:73: 'new' used with undefined class Throw.
+list.cl:73: Dispatch to undefined method warning.
+list.cl:82: 'new' used with undefined class A2I.
+list.cl:82: Dispatch to undefined method i2a.
+list.cl:82: In call of method out_string, type Object of parameter arg does not conform to declared type String.
+list.cl:83: 'new' used with undefined class Mylib.
+list.cl:83: Dispatch to undefined method b2a.
+list.cl:83: In call of method out_string, type Object of parameter arg does not conform to declared type String.
+list.cl:103: 'new' used with undefined class Op.
+list.cl:103: Dispatch to undefined method or.
+list.cl:103: Predicate of 'if' does not have type Bool.
+list.cl:103: 'new' used with undefined class Throw.
+list.cl:103: Dispatch to undefined method warning.
+list.cl:122: 'new' used with undefined class Op.
+list.cl:122: Dispatch to undefined method or.
+list.cl:122: Predicate of 'if' does not have type Bool.
+list.cl:122: 'new' used with undefined class Throw.
+list.cl:122: Dispatch to undefined method warning.
+list.cl:141: 'new' used with undefined class Throw.
+list.cl:141: Dispatch to undefined method warning.
+list.cl:163: 'new' used with undefined class Op.
+list.cl:163: Dispatch to undefined method and.
+list.cl:163: Loop condition does not have type Bool.
+list.cl:166: 'new' used with undefined class Throw.
+list.cl:166: 'new' used with undefined class Mylib.
+list.cl:166: Dispatch to undefined method item2a.
+list.cl:166: In call of method concat, type Object of parameter arg does not conform to declared type String.
+list.cl:166: Dispatch to undefined method warning.
+list.cl:175: 'new' used with undefined class Op.
+list.cl:175: Dispatch to undefined method and.
+list.cl:175: Loop condition does not have type Bool.
+list.cl:178: 'new' used with undefined class Throw.
+list.cl:178: 'new' used with undefined class Mylib.
+list.cl:178: Dispatch to undefined method item2a.
+list.cl:178: In call of method concat, type Object of parameter arg does not conform to declared type String.
+list.cl:178: Dispatch to undefined method warning.
+list.cl:191: 'new' used with undefined class Op.
+list.cl:191: Dispatch to undefined method or.
+list.cl:191: Predicate of 'if' does not have type Bool.
+list.cl:191: 'new' used with undefined class Throw.
+list.cl:191: Dispatch to undefined method warning.
+list.cl:206: 'new' used with undefined class Op.
+list.cl:206: Dispatch to undefined method or.
+list.cl:206: Predicate of 'if' does not have type Bool.
+list.cl:206: 'new' used with undefined class Throw.
+list.cl:206: Dispatch to undefined method warning.
+Compilation halted due to static semantic errors.

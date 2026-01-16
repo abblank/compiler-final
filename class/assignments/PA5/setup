@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -rf lexer parser semant 
+ln -s ../PA2/lexer lexer
+ln -s ../PA3/parser parser
+ln -s ../PA4/semant semant
+echo "link done."

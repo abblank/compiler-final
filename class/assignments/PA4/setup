@@ -1,0 +1,3 @@
+#!/bin/bash
+ln -s ../PA2/lexer lexer
+ln -s ../PA3/parser parser

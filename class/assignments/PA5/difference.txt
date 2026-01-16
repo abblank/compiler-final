@@ -1,0 +1,569 @@
+2,7d1
+< 
+< 
+< #+++++ starting CgenClassTable::code +++++
+< 
+< 
+< #== generating global data ==
+25d18
+< #== generating gc ==
+35d27
+< #== generating constants ==
+260d251
+< #== generating name table ==
+263,267c254,258
+< #== child: IO ==
+< #== child: Int ==
+< #== child: Bool ==
+< #== child: String ==
+< #== child: Main ==
+---
+> # child: IO
+> # child: Int
+> # child: Bool
+> # child: String
+> # child: Main
+270c261
+< #== child: Bazz ==
+---
+> # child: Bazz
+279c270
+< #== child: Razz ==
+---
+> # child: Razz
+284c275
+< #== child: Bar ==
+---
+> # child: Bar
+287c278
+< #== child: Foo ==
+---
+> # child: Foo
+291d281
+< #== generating object table ==
+313d302
+< #== generating dispatch table ==
+315c304
+< #== method # 0 ==
+---
+> 	# method # 0
+317c306
+< #== method # 1 ==
+---
+> 	# method # 1
+319c308
+< #== method # 2 ==
+---
+> 	# method # 2
+322c311
+< #== method # 0 ==
+---
+> 	# method # 0
+324c313
+< #== method # 1 ==
+---
+> 	# method # 1
+326c315
+< #== method # 2 ==
+---
+> 	# method # 2
+328c317
+< #== method # 3 ==
+---
+> 	# method # 3
+330c319
+< #== method # 4 ==
+---
+> 	# method # 4
+332c321
+< #== method # 5 ==
+---
+> 	# method # 5
+334c323
+< #== method # 6 ==
+---
+> 	# method # 6
+337c326
+< #== method # 0 ==
+---
+> 	# method # 0
+339c328
+< #== method # 1 ==
+---
+> 	# method # 1
+341c330
+< #== method # 2 ==
+---
+> 	# method # 2
+344c333
+< #== method # 0 ==
+---
+> 	# method # 0
+346c335
+< #== method # 1 ==
+---
+> 	# method # 1
+348c337
+< #== method # 2 ==
+---
+> 	# method # 2
+351c340
+< #== method # 0 ==
+---
+> 	# method # 0
+353c342
+< #== method # 1 ==
+---
+> 	# method # 1
+355c344
+< #== method # 2 ==
+---
+> 	# method # 2
+357c346
+< #== method # 3 ==
+---
+> 	# method # 3
+359c348
+< #== method # 4 ==
+---
+> 	# method # 4
+361c350
+< #== method # 5 ==
+---
+> 	# method # 5
+364c353
+< #== method # 0 ==
+---
+> 	# method # 0
+366c355
+< #== method # 1 ==
+---
+> 	# method # 1
+368c357
+< #== method # 2 ==
+---
+> 	# method # 2
+370c359
+< #== method # 3 ==
+---
+> 	# method # 3
+372c361
+< #== method # 4 ==
+---
+> 	# method # 4
+374c363
+< #== method # 5 ==
+---
+> 	# method # 5
+376c365
+< #== method # 6 ==
+---
+> 	# method # 6
+378c367
+< #== method # 7 ==
+---
+> 	# method # 7
+380c369
+< #== method # 8 ==
+---
+> 	# method # 8
+383c372
+< #== method # 0 ==
+---
+> 	# method # 0
+385c374
+< #== method # 1 ==
+---
+> 	# method # 1
+387c376
+< #== method # 2 ==
+---
+> 	# method # 2
+389c378
+< #== method # 3 ==
+---
+> 	# method # 3
+391c380
+< #== method # 4 ==
+---
+> 	# method # 4
+393c382
+< #== method # 5 ==
+---
+> 	# method # 5
+395c384
+< #== method # 6 ==
+---
+> 	# method # 6
+397c386
+< #== method # 7 ==
+---
+> 	# method # 7
+399c388
+< #== method # 8 ==
+---
+> 	# method # 8
+402c391
+< #== method # 0 ==
+---
+> 	# method # 0
+404c393
+< #== method # 1 ==
+---
+> 	# method # 1
+406c395
+< #== method # 2 ==
+---
+> 	# method # 2
+408c397
+< #== method # 3 ==
+---
+> 	# method # 3
+410c399
+< #== method # 4 ==
+---
+> 	# method # 4
+412c401
+< #== method # 5 ==
+---
+> 	# method # 5
+414c403
+< #== method # 6 ==
+---
+> 	# method # 6
+416c405
+< #== method # 7 ==
+---
+> 	# method # 7
+418c407
+< #== method # 8 ==
+---
+> 	# method # 8
+421c410
+< #== method # 0 ==
+---
+> 	# method # 0
+423c412
+< #== method # 1 ==
+---
+> 	# method # 1
+425c414
+< #== method # 2 ==
+---
+> 	# method # 2
+427c416
+< #== method # 3 ==
+---
+> 	# method # 3
+429c418
+< #== method # 4 ==
+---
+> 	# method # 4
+431c420
+< #== method # 5 ==
+---
+> 	# method # 5
+433c422
+< #== method # 6 ==
+---
+> 	# method # 6
+435c424
+< #== method # 7 ==
+---
+> 	# method # 7
+437c426
+< #== method # 8 ==
+---
+> 	# method # 8
+440c429
+< #== method # 0 ==
+---
+> 	# method # 0
+442c431
+< #== method # 1 ==
+---
+> 	# method # 1
+444c433
+< #== method # 2 ==
+---
+> 	# method # 2
+446c435
+< #== method # 3 ==
+---
+> 	# method # 3
+448d436
+< #== generating prototype objects ==
+528d515
+< #== generating global text ==
+538d524
+< #== generating object initializers ==
+540c526
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+545a532
+> 	# fp now points to the return addr in stack
+548,550c535
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+553d537
+< #== Initializing 0 attributes for class: Object ==
+567c551
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+572a557
+> 	# fp now points to the return addr in stack
+575,577c560
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+580c563
+< #== Calling parent init for class: IO, parent: Object ==
+---
+> 	# init parent
+583d565
+< #== Initializing 0 attributes for class: IO ==
+597c579
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+602a585
+> 	# fp now points to the return addr in stack
+605,607c588
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+610c591
+< #== Calling parent init for class: Int, parent: Object ==
+---
+> 	# init parent
+613,615c594,595
+< #== Initializing 1 attributes for class: Int ==
+< #== Processing attribute: _val of type _prim_slot ==
+< 	# init attrib _val	# ret = SELF
+---
+> 	# init attrib _val
+> 	# ret = SELF
+628c608
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+633a614
+> 	# fp now points to the return addr in stack
+636,638c617
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+641c620
+< #== Calling parent init for class: Bool, parent: Object ==
+---
+> 	# init parent
+644,646c623,624
+< #== Initializing 1 attributes for class: Bool ==
+< #== Processing attribute: _val of type _prim_slot ==
+< 	# init attrib _val	# ret = SELF
+---
+> 	# init attrib _val
+> 	# ret = SELF
+659c637
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+664a643
+> 	# fp now points to the return addr in stack
+667,669c646
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+672c649
+< #== Calling parent init for class: String, parent: Object ==
+---
+> 	# init parent
+675,677c652,653
+< #== Initializing 2 attributes for class: String ==
+< #== Processing attribute: _val of type Int ==
+< 	# init attrib _val	la	$a0 int_const1
+---
+> 	# init attrib _val
+> 	la	$a0 int_const1
+679,680c655,656
+< #== Processing attribute: _str_field of type _prim_slot ==
+< 	# init attrib _str_field	# ret = SELF
+---
+> 	# init attrib _str_field
+> 	# ret = SELF
+693c669
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+698a675
+> 	# fp now points to the return addr in stack
+701,703c678
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+706c681
+< #== Calling parent init for class: Foo, parent: Bazz ==
+---
+> 	# init parent
+709,711c684,685
+< #== Initializing 2 attributes for class: Foo ==
+< #== Processing attribute: a of type Razz ==
+< 	# init attrib a	# case expr
+---
+> 	# init attrib a
+> 	# case expr
+791,792c765,766
+< #== Processing attribute: b of type Int ==
+< 	# init attrib b	la	$a0 int_const0
+---
+> 	# init attrib b
+> 	la	$a0 int_const0
+808c782
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+813a788
+> 	# fp now points to the return addr in stack
+816,818c791
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+821c794
+< #== Calling parent init for class: Bar, parent: Razz ==
+---
+> 	# init parent
+824,826c797,798
+< #== Initializing 2 attributes for class: Bar ==
+< #== Processing attribute: c of type Int ==
+< 	# init attrib c	# Dispatch. First eval and save the params.
+---
+> 	# init attrib c
+> 	# Dispatch. First eval and save the params.
+850,851c822,823
+< #== Processing attribute: d of type Object ==
+< 	# init attrib d	# Dispatch. First eval and save the params.
+---
+> 	# init attrib d
+> 	# Dispatch. First eval and save the params.
+888c860
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+893a866
+> 	# fp now points to the return addr in stack
+896,898c869
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+901c872
+< #== Calling parent init for class: Razz, parent: Foo ==
+---
+> 	# init parent
+904,906c875,876
+< #== Initializing 2 attributes for class: Razz ==
+< #== Processing attribute: e of type Bar ==
+< 	# init attrib e	# case expr
+---
+> 	# init attrib e
+> 	# case expr
+963,964c933,934
+< #== Processing attribute: f of type Int ==
+< 	# init attrib f	# Dispatch. First eval and save the params.
+---
+> 	# init attrib f
+> 	# Dispatch. First eval and save the params.
+1001c971
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+1006a977
+> 	# fp now points to the return addr in stack
+1009,1011c980
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+1014c983
+< #== Calling parent init for class: Bazz, parent: IO ==
+---
+> 	# init parent
+1017,1019c986,987
+< #== Initializing 3 attributes for class: Bazz ==
+< #== Processing attribute: h of type Int ==
+< 	# init attrib h	la	$a0 int_const0
+---
+> 	# init attrib h
+> 	la	$a0 int_const0
+1022,1023c990,991
+< #== Processing attribute: g of type Foo ==
+< 	# init attrib g	# case expr
+---
+> 	# init attrib g
+> 	# case expr
+1130,1131c1098,1099
+< #== Processing attribute: i of type Object ==
+< 	# init attrib i	# Dispatch. First eval and save the params.
+---
+> 	# init attrib i
+> 	# Dispatch. First eval and save the params.
+1168c1136
+< #== save fp, s0, ra ==
+---
+> 	# push fp, s0, ra
+1173a1142
+> 	# fp now points to the return addr in stack
+1176,1178c1145
+< #^^^^^ fp now points to the return addr in stack ^^^^^
+< 
+< #== SELF = a0(ACC), set current object pointer ==
+---
+> 	# SELF = a0
+1181c1148
+< #== Calling parent init for class: Main, parent: Object ==
+---
+> 	# init parent
+1184,1186c1151,1152
+< #== Initializing 1 attributes for class: Main ==
+< #== Processing attribute: a of type Bazz ==
+< 	# init attrib a	la	$a0 Bazz_protObj
+---
+> 	# init attrib a
+> 	la	$a0 Bazz_protObj
+1203d1168
+< #== generating class methods ==
+1312c1277
+< #== Assign. First eval the expr ==
+---
+> 	# Assign. First eval the expr.
+1339,1340c1304,1305
+< #== Now find the lvalue ==
+< #== It is an attribute ==
+---
+> 	# Now find the lvalue.
+> 	# It is an attribute.
+1389,1393d1353
+< 
+< 
+< 
+< #+++++ ending CgenClassTable::code +++++
+< 

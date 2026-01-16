@@ -1,0 +1,23 @@
+--- test_outputs/mysemant_test_complex.out	2025-11-21 15:55:00.157378863 +0800
++++ test_outputs/auth_semant_test_complex.out	2025-11-21 15:55:00.164438801 +0800
+@@ -1,14 +1,12 @@
+-test_complex.cl:13: Undefined return type Str in method bar.
+-test_complex.cl:14: Inferred type Int of method body does not conform to declared return type Str for method bar.
+-test_complex.cl:22: In redefined method foo, parameter type Int is different from original type Bool.
++test_complex.cl:22: In redefined method foo, parameter type Int is different from original type Bool
+ test_complex.cl:27: In redefined method bar, return type Int is different from original return type Str.
+-test_complex.cl:19: Undefined type Str in attribute c.
+-test_complex.cl:28: Inferred type String of method body does not conform to declared return type Int for method bar.
++test_complex.cl:13: Undefined return type Str in method bar.
++test_complex.cl:19: Class Str of attribute c is undefined.
++test_complex.cl:27: Inferred return type String of method bar does not conform to declared return type Int.
+ test_complex.cl:42: Method foo called with wrong number of arguments.
+ test_complex.cl:47: Dispatch to undefined method baz.
+ test_complex.cl:53: Expression type A does not conform to declared static dispatch type B.
+-test_complex.cl:53: In call of method foo, type Bool of parameter y does not conform to declared type Int.
+-test_complex.cl:59: Dispatch to undefined method baz.
++test_complex.cl:59: Static dispatch to undefined method baz.
+ test_complex.cl:64: Undeclared identifier x.
+-test_complex.cl:64: Duplicate branch A in case statement.
++test_complex.cl:67: Duplicate branch A in case statement.
+ Compilation halted due to static semantic errors.
